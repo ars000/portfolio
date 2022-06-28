@@ -1,0 +1,548 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="decription" content="Сайт портфолио Арсена Вадиева - HTML верстальщик. Верстка сайтов, Landing, интернет-магазинов (фиксированная, резиновая, адаптивная).">
+  <title>Сайт портфолио Арсена Вадиева - HTML верстальщик</title>
+  
+  <!-- Styles -->
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+  <link href="css/swiper-bundle.min.css" rel="stylesheet" />
+  <link href="css/animate.min.css" rel="stylesheet" />
+  <link href="css/styles.css" rel="stylesheet">
+
+  <!-- Favicon -->
+  <link rel="apple-touch-icon" sizes="180x180" href="favicons/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="favicons/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="favicons/favicon-16x16.png">
+  <link rel="manifest" href="favicons/site.webmanifest">
+  <link rel="mask-icon" href="favicons/safari-pinned-tab.svg" color="#ffa104">
+  <meta name="msapplication-TileColor" content="#2b5797">
+  <meta name="theme-color" content="#ffffff">
+</head>
+<body>
+  <!-- Header -->
+  <header class="header fixed-top">
+    <nav id="navbar" class="navbar navbar-dark navbar-expand-lg container flex-wrap flex-lg-nowrap">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">
+          <img class="logo" src="img/logo.svg" alt="" />
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarContent">
+          <ul class="menu navbar-nav flex-row-lg ms-auto">
+            <li class="nav-item"><a href="#about" class="nav-link">Обо мне</a></li>
+            <li class="nav-item"><a href="#skills" class="nav-link">Навыки</a></li>
+            <li class="nav-item"><a href="#process" class="nav-link">Процесс верстки</a></li>
+            <li class="nav-item"><a href="#works" class="nav-link">Работы</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <!-- Header -->
+
+  <!-- Content -->
+  <main class="main" data-bs-spy="scroll" data-bs-target="#navbar"  data-bs-smooth-scroll="true" class="scrollspy-example" tabindex="0">
+    <section id="hero" class="section hero mb-4">
+      <div class="container">
+        <h1 class="title wow fadeInUp">Добрый день<br />  я Арсен Вадиев</h1>
+        <h3 class="subtitle wow fadeInUp" data-wow-delay="0.3s">HTML верстальщик</h3>
+      </div>
+    </section>
+    
+    <section id="about" class="section about">
+      <div class="container">
+        <h2 class="wow fadeInUp">Обо мне</h2>
+        <p class="text-center wow fadeInUp" data-wow-delay="0.3s">Приветствую Вас на своем сайте-портфолио. Меня зовут Арсен. Занимаюсь HTML-версткой сайтов и приложений. 
+          Верстка полностью валидная, кроссбраузерная и адаптивная. Для обеспечения выполнения требований, 
+          предъявляемых к верстке сайта, приложения в процессе работы над проектом использую соответствуещие инструменты и технологии. 
+          Препроцессоры Sass/Less для ускоренной стилизации сайта и более гибкого кода, фреймворки Bootstrap/Material UI для 
+          кроссбраузерности и адаптивной верстки, сборщик проектов Gulp/Webpack для автоматизации процесса верстки,  Pixel Perfect для 
+          совпадения верстки с предоставленным макетом «пиксель в пиксель». К сайту так же, при желании подключаются и настраиваются различные 
+          JS/jQuery библиотеки и плагины. Свёрстаный код проверяется W3C валидатором на соответствие стандартам. В конце работы осуществляется 
+          проверка отображения верстки в различных популярных браузерах на разных устройствах.</p>
+      </div>
+    </section>
+    
+    <section id="skills" class="section skills">
+      <div class="container">
+        <h2 class="wow fadeInUp">Мои навыки</h2>
+        <div id="skills-wrap" class="row">
+          <div class="skills-item col-sm-6 col-lg-4 wow fadeInUp" data-wow-delay="0.2s">
+            <div class="card">
+              <div class="card-body">
+                <div class="card-icon">
+                  <lord-icon
+                    class="icon"
+                    src="https://cdn.lordicon.com/buqfvmsj.json"
+                    trigger="loop"
+                    delay="5000"
+                    colors="primary:#1f1dc3,secondary:#fda30d">
+                  </lord-icon>
+                </div>
+                <h4 class="card-title">HTML5/CSS3</h4>
+                <ul>
+                  <li>Семантичная верстка</li>
+                  <li>Структутированный код</li>
+                  <li>Валидный, кроссбраузерный код</li>
+                  <li>PixelPerfect</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <div class="skills-item col-sm-6 col-lg-4 wow fadeInUp" data-wow-delay="0.3s">
+            <div class="card">
+              <div class="card-body">
+                <div class="card-icon">
+                  <lord-icon
+                    class="icon"
+                    src="https://cdn.lordicon.com/pndvzexs.json"
+                    trigger="loop"
+                    delay="5000"
+                    colors="primary:#1f1dc3,secondary:#fda30d">
+                  </lord-icon>
+                </div>
+                <h4 class="card-title">Sass/Less</h4>
+                <ul>
+                  <li>Ускоренная стилизация сайта</li>
+                  <li>Структутированный код</li>
+                  <li>Упрощенный синтаксис</li>
+                  <li>Разнообразие возможностей</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <div class="skills-item col-sm-6 col-lg-4 wow fadeInUp" data-wow-delay="0.4s">
+            <div class="card">
+              <div class="card-body">
+                <div class="card-icon">
+                  <lord-icon
+                    class="icon"
+                    src="https://cdn.lordicon.com/dtgezzsi.json"
+                    trigger="loop"
+                    delay="5000"
+                    colors="primary:#1f1dc3,secondary:#fda30d">
+                  </lord-icon>
+                </div>
+                <h4 class="card-title">Javascript/JQuery</h4>
+                <ul>
+                  <li>Подключение библиотек</li>
+                  <li>Настройка плагинов</li>
+                  <li>Комментируемый код</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <div class="skills-item col-sm-6 col-lg-4 wow fadeInUp" data-wow-delay="0.6s">
+            <div class="card">
+              <div class="card-body">
+                <div class="card-icon">
+                  <lord-icon
+                    class="icon"
+                    src="https://cdn.lordicon.com/fgkmrslx.json"
+                    trigger="loop"
+                    delay="5000"
+                    colors="primary:#1f1dc3,secondary:#fda30d">
+                  </lord-icon>
+                </div>
+                <h4 class="card-title">Photoshop/Figma</h4>
+                <ul>
+                  <li>Нарезка изображений из макета</li>
+                  <li>Экспорт SVG иконок и изображений</li>
+                  <li>Экспорт стилей для ускоренной верстки</li>
+                  <li>Оптимизация изображений для Web</li>
+                </ul>                
+              </div>
+            </div>
+          </div>
+
+          <div class="skills-item col-sm-6 col-lg-4 wow fadeInUp" data-wow-delay="0.8s">
+            <div class="card">
+              <div class="card-body">
+                <div class="card-icon">
+                  <lord-icon
+                    class="icon"
+                    src="https://cdn.lordicon.com/ochimkct.json"
+                    trigger="loop"
+                    delay="5000"
+                    colors="primary:#1f1dc3,secondary:#fda30d">
+                  </lord-icon>
+                </div>
+                <h4 class="card-title">Bootstrap/Material UI</h4>
+                <ul>
+                  <li>Высокая скорость разработки</li>
+                  <li>Кроссбраузерность и адаптивность</li>
+                  <li>Готовые элементы компонентов</li>
+                  <li>Максимально чистый код</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <div class="skills-item col-sm-6 col-lg-4 wow fadeInUp" data-wow-delay="1s">
+            <div class="card">
+              <div class="card-body">
+                <div class="card-icon">
+                  <lord-icon
+                    class="icon"
+                    src="https://cdn.lordicon.com/jqeuwnmb.json"
+                    trigger="loop"
+                    delay="5000"
+                    colors="primary:#1f1dc3,secondary:#fda30d">
+                  </lord-icon>
+                </div>
+                <h4 class="card-title">Gulp/Webpack</h4>
+                <ul>
+                  <li>Компиляция препроцессоров</li>
+                  <li>Минификация кода</li>
+                  <li>Кроссбраузерность</li>                  
+                  <li>Объединение кода из разных файлов в один</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    <section id="process" class="section process">
+      <div class="container">
+        <h2>Процесс верстки</h2>
+        <div class="row steps">
+          <div class="col-lg-2 col-md-4 col-6">
+            <div class="step wow zoomIn" data-wow-delay="0.2s">
+              <div class="step-number">1</div>
+              <div class="step-icon">
+                <span class="icon-scissors"></span>
+              </div>
+              <div class="step-name">Работа с<br/> макетом</div>
+            </div>
+          </div>
+          <div class="col-lg-2 col-md-4 col-6">
+            <div class="step wow zoomIn" data-wow-delay="0.4s">
+              <div class="step-number">2</div>
+              <div class="step-icon">
+                <span class="icon-html5"></span>
+              </div>
+              <div class="step-name">Верстка<br/> контента</div>
+            </div>
+          </div>
+          <div class="col-lg-2 col-md-4 col-6">
+            <div class="step wow zoomIn" data-wow-delay="0.6s">
+              <div class="step-number">3</div>
+              <div class="step-icon">
+                <span class="icon-css3"></span>
+              </div>
+              <div class="step-name">Стилизация<br/> сайта</div>
+            </div>
+          </div>
+          <div class="col-lg-2 col-md-4 col-6">
+            <div class="step wow zoomIn" data-wow-delay="0.8s">
+              <div class="step-number">4</div>
+              <div class="step-icon">
+                <span class="icon-mobile"></span>
+              </div>
+              <div class="step-name">Адаптивная<br/> верстка</div>
+            </div>
+          </div>
+          <div class="col-lg-2 col-md-4 col-6">
+            <div class="step wow zoomIn" data-wow-delay="1s">
+              <div class="step-number">5</div>
+              <div class="step-icon">
+                <span class="icon-chrome"></span>
+              </div>
+              <div class="step-name">Проверка в<br/> браузерах</div>
+            </div>
+          </div>
+          <div class="col-lg-2 col-md-4 col-6">
+            <div class="step wow zoomIn" data-wow-delay="1.2s">
+              <div class="step-number">6</div>
+              <div class="step-icon">
+                <span class="icon-warning"></span>
+              </div>
+              <div class="step-name">Устранение<br/> ошибок</div>
+            </div>
+          </div>
+        </div>
+
+        <h4 class="text-center wow fadeInUp">Используемые инструменты, технологии</h4>
+        <!-- Slider -->
+        <div id="tools" class="swiper wow fadeInUp" data-wow-delay="0.2s">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <img src="./img/logos/html-css.png" alt="HTML/CSS" >
+            </div>
+            <div class="swiper-slide">
+              <img src="./img/logos/js.png" alt="Js" >
+            </div>
+            <div class="swiper-slide">
+              <img src="./img/logos/jquery.png" alt="Jquery" >
+            </div>
+            <div class="swiper-slide">
+              <img src="./img/logos/sass.png" alt="Sass" >
+            </div>
+            <div class="swiper-slide">
+              <img src="./img/logos/less.png" alt="Less" >
+            </div>
+            <div class="swiper-slide">
+              <img src="./img/logos/photoshop.png" alt="Photoshop" >
+            </div>
+            <div class="swiper-slide">
+              <img src="./img/logos/figma.png" alt="Figma" >
+            </div>
+            <div class="swiper-slide">
+              <img src="./img/logos/vscode.png" alt="Figma" >
+            </div>          
+          </div>
+        </div>
+        <!-- /Slider -->
+      </div>
+    </section>
+    
+    <section id="works" class="section works">
+      <div class="container">
+        <h2 class="wow fadeInUp">Мои работы</h2>
+        <div id="works-wrap" class="row works-wrap">
+          <div class="col-sm-6 col-lg-4 wow zoomIn">
+            <a class="work" href="https://dbesystems.com/" data-description="Веб сайт компании, которая занимается подключением оптоволоконной и беспроводной сетями.">
+              <img class="work-img" src="./img/works-img/dbe/dbe.jpg" 
+                data-img-src2="./img/works-img/dbe/dbe-about.jpg"
+                data-img-src3="./img/works-img/dbe/dbe-network.jpg"
+                data-img-src4="./img/works-img/dbe/dbe-software.jpg"                
+                alt="Work img" >
+              <div class="work-cover">
+                <h4 class="work-cover-name">DBE Systems</h4>
+              </div>
+            </a>
+          </div>
+          <div class="col-sm-6 col-lg-4 wow zoomIn">
+            <a class="work" href="https://bdswiss.com/" data-description="Веб приложение для торговли драгоценными металлами.">
+              <img class="work-img" src="./img/works-img/bdswiss/bdswiss.png"
+                data-img-src2="./img/works-img/bdswiss/bdswiss-positions.png"
+                data-img-src3="./img/works-img/bdswiss/bdswiss-tablet.png"
+                data-img-src4="./img/works-img/bdswiss/bdswiss-mobile.png" 
+                alt="Work img" >
+              <div class="work-cover">
+                <h4 class="work-cover-name">BDSWISS Metals Trading</h4>
+              </div>
+            </a>
+          </div>
+          <div class="col-sm-6 col-lg-4 wow zoomIn">
+            <a class="work" href="https://rightandabove.com/" data-description="Веб сайт компании.">
+              <img class="work-img" src="./img/works-img/raa/raa.jpg"
+                data-img-src2="./img/works-img/raa/raa-portfolio.jpg"
+                data-img-src3="./img/works-img/raa/raa-services.jpg"
+                data-img-src4="./img/works-img/raa/raa-inner.jpg" 
+                alt="Work img" >
+              <div class="work-cover">
+                <h4 class="work-cover-name">Right&Above Website</h4>
+              </div>
+            </a>
+          </div>
+          <div class="col-sm-6 col-lg-4 wow zoomIn">
+            <a class="work" href="https://klarpay.com/" data-description="Веб приложение для предоставления финансовых услуг.">
+              <img class="work-img" src="./img/works-img/klarpayDashboard/klarpay-dashboard.jpg"
+                data-img-src2="./img/works-img/klarpayDashboard/klarpay-dashboard-actions.jpg"
+                data-img-src3="./img/works-img/klarpayDashboard/klarpay-dashboard-login.jpg"
+                data-img-src4="./img/works-img/klarpayDashboard/klarpay-dashboard-mobile.png"
+                alt="Work img" >
+              <div class="work-cover">
+                <h4 class="work-cover-name">Klarpay Dashboard</h4>
+              </div>
+            </a>
+          </div>
+          <div class="col-sm-6 col-lg-4 wow zoomIn">
+            <a class="work" href="https://sparlingfinancial.com/" data-description="Веб сайт компании которая занимается торговлей криптовалютой.">
+              <img class="work-img" src="./img/works-img/sparling/sparling.jpg"
+                data-img-src2="./img/works-img/sparling/sparling-about.jpg"
+                data-img-src3="./img/works-img/sparling/sparling-contacts.jpg"
+                data-img-src4="./img/works-img/sparling/sparling-login.png"
+                alt="Work img" >
+              <div class="work-cover">
+                <h4 class="work-cover-name">Sparling Financial</h4>
+              </div>
+            </a>
+          </div>
+          <div class="col-sm-6 col-lg-4 wow zoomIn">
+            <a class="work" href="https://klarpay.com/" data-description="Веб сайт компании которая предоставляет финансовые услуги.">
+              <img class="work-img" src="./img/works-img/klarpayWebsite/klarpayWebsite.jpg"
+                data-img-src2="./img/works-img/klarpayWebsite/klarpayWebsite-applepay.jpg"
+                data-img-src3="./img/works-img/klarpayWebsite/klarpayWebsite-news.jpg"
+                data-img-src4="./img/works-img/klarpayWebsite/klarpayWebsite-mobile.jpg"
+                alt="Work img" >
+              <div class="work-cover">
+                <h4 class="work-cover-name">Klarpay Website</h4>
+              </div>
+            </a>
+          </div>
+          <div class="col-sm-6 col-lg-4 wow zoomIn">
+            <a class="work" href="" data-description="Веб сайт стартапа.">
+              <img class="work-img" src="./img/works-img/reelgenie/reelgenie-homepage.jpg"
+                data-img-src2="./img/works-img/reelgenie/reelgenie-about.jpg"
+                data-img-src3="./img/works-img/reelgenie/reelgenie-tech.jpg"
+                data-img-src4="./img/works-img/reelgenie/reelgenie-api.jpg"
+                alt="Work img" >
+              <div class="work-cover">
+                <h4 class="work-cover-name">Reel Genie</h4>
+              </div>
+            </a>
+          </div>
+          <div class="col-sm-6 col-lg-4 wow zoomIn">
+            <a class="work" href="" data-description="Веб приложение для внутреннего пользования компании Docomo.">
+              <img class="work-img" src="./img/works-img/docomo/docomo.png"
+                data-img-src2="./img/works-img/docomo/docomo-profile.png"
+                data-img-src3="./img/works-img/docomo/docomo-staff.png"
+                data-img-src4="./img/works-img/docomo/docomo-login.png" 
+                alt="Work img" >
+              <div class="work-cover">
+                <h4 class="work-cover-name">Docomo Dess</h4>
+              </div>
+            </a>
+          </div>          
+          <div class="col-sm-6 col-lg-4 wow zoomIn">
+            <a class="work" href="" data-description="Веб приложение для внутреннего пользования компании Comodo.">
+              <img class="work-img" src="./img/works-img/comodo/comodo.png"
+                data-img-src2="./img/works-img/comodo/comodo-preferences.png"
+                data-img-src3="./img/works-img/comodo/comodo-user.png"
+                data-img-src4="./img/works-img/comodo/comodo-group.png" 
+                alt="Work img" >
+              <div class="work-cover">
+                <h4 class="work-cover-name">Comodo SecureBox</h4>
+              </div>
+            </a>
+          </div>
+          <div class="col-sm-6 col-lg-4 wow zoomIn">
+            <a class="work" href="" data-description="Веб сайт компании.">
+              <img class="work-img" src="./img/works-img/advertisingAnalytics/advertisingAnalytics.jpg"
+                data-img-src2="./img/works-img/advertisingAnalytics/advertisingAnalytics-products.jpg"
+                data-img-src3="./img/works-img/advertisingAnalytics/advertisingAnalytics-admo.jpg"
+                data-img-src4="./img/works-img/advertisingAnalytics/advertisingAnalytics-tablet.jpg"
+                alt="Work img" >
+              <div class="work-cover">
+                <h4 class="work-cover-name">Advertising Analytics</h4>
+              </div>
+            </a>
+          </div>
+          <div class="col-sm-6 col-lg-4 wow zoomIn">
+            <a class="work" href="" data-description="Веб приложение для внутреннего пользования компании Airbox.">
+              <img class="work-img" src="./img/works-img/airbox/airbox.png"
+                data-img-src2="./img/works-img/airbox/airbox-logos.png"
+                data-img-src3="./img/works-img/airbox/airbox-mapping.png"
+                data-img-src4="./img/works-img/airbox/airbox-poster.png"
+                alt="Work img" >
+              <div class="work-cover">
+                <h4 class="work-cover-name">Airbox</h4>
+              </div>
+            </a>
+          </div>
+          <div class="col-sm-6 col-lg-4 wow zoomIn">
+            <a class="work" href="https://connectedinvestors.com/" data-description="Веб сайт компании.">
+              <img class="work-img" src="./img/works-img/connectedInvestors/connectedInvestors.jpg"
+                data-img-src2="./img/works-img/connectedInvestors/connectedInvestors-insights.jpg"
+                data-img-src3="./img/works-img/connectedInvestors/connectedInvestors-platform.jpg"
+                data-img-src4="./img/works-img/connectedInvestors/connectedInvestors-mobile.jpg"
+                alt="Work img" >
+              <div class="work-cover">
+                <h4 class="work-cover-name">Connected Investors</h4>
+              </div>
+            </a>
+          </div>
+          <div class="col-sm-6 col-lg-4 wow zoomIn">
+            <a class="work" href="https://transientx.com/" data-description="Веб сайт компании TransientX.">
+              <img class="work-img" src="./img/works-img/transientx/transientx.jpg"
+                data-img-src2="./img/works-img/transientx/transientx-access.jpg"
+                data-img-src3="./img/works-img/transientx/transientx-access-need.jpg"
+                data-img-src4="./img/works-img/transientx/transientx-mobile.jpg"
+                alt="Work img" >
+              <div class="work-cover">
+                <h4 class="work-cover-name">TransientX</h4>
+              </div>
+            </a>
+          </div>          
+          <div class="col-sm-6 col-lg-4 wow zoomIn">
+            <a class="work" href="" data-description="Продукт, который подключает локальные приложения на устройствах к своим серверам, используя изолированные оверлейные сети, созданные для отдельных пользователей.">
+              <img class="work-img" src="./img/works-img/appflareDashboard/appflareDashboard.jpg"
+                data-img-src2="./img/works-img/appflareDashboard/appflareDashboard-app.jpg"
+                data-img-src3="./img/works-img/appflareDashboard/appflareDashboard-workspaces.jpg"
+                data-img-src4="./img/works-img/appflareDashboard/appflareDashboard-login.jpg" 
+                alt="Work img" >
+              <div class="work-cover">
+                <h4 class="work-cover-name">Appflare</h4>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>        
+  </main>
+  <!-- /Content -->
+
+  <!-- Modal -->
+  <div id="myModal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-xl modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <div class="container d-flex justify-content-between align-items-center">
+            <h5 class="modal-title">Modal title</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+        </div>
+        <div class="modal-body">
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-9">
+                <!-- Slider -->
+                <div id="project-imgs" class="swiper">
+                  <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                      <img id="project-img-1" src="" alt="" >
+                    </div>
+                    <div class="swiper-slide">
+                      <img id="project-img-2" src="" alt="" >
+                    </div>
+                    <div class="swiper-slide">
+                      <img id="project-img-3" src="" alt="" >
+                    </div>
+                    <div class="swiper-slide">
+                      <img id="project-img-4" src="" alt="" >
+                    </div>
+                  </div>                  
+                  <div class="swiper-button-next"></div>
+                  <div class="swiper-button-prev"></div>
+                  <div class="swiper-pagination"></div>
+                </div>
+                <!-- /Slider -->
+              </div>
+              <div class="col-lg-3">
+                <h5 class="mt-3 mt-lg-0">Описание</h5>
+                <p id="project-description"></p>
+                <a id="project-link" class="text-break" href=""  target="_blank"></a>
+              </div>
+            </div>              
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- /Modal -->
+
+  <!-- JS -->
+  <script src="http://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js" integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk" crossorigin="anonymous"></script>
+  <script src="http://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-kjU+l4N0Yf4ZOJErLsIcvOU2qSb74wXpOhqTvwVx3OElZRweTnQ6d31fXEoRD1Jy" crossorigin="anonymous"></script>
+  <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+  <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+  <script type="text/javascript" src="js/jquery.hoverdir.js"></script>
+  <script type="text/javascript" src="js/wow.min.js"></script>
+  <script src="https://cdn.lordicon.com/xdjxvujz.js"></script>
+  <script src="js/scripts.js"></script>
+</body>
+</html>
