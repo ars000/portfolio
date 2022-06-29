@@ -1,3 +1,7 @@
+// Loader
+$(window).on('load', function() {
+  $('.loader-wrap').delay(300).fadeOut('slow');
+});
 
 // Slider init
 let mySwiper = new Swiper('#tools', {
