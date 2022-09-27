@@ -4,7 +4,7 @@ $(window).on('load', function() {
 });
 
 // Slider init
-let mySwiper = new Swiper('#tools', {
+new Swiper('#tools', {
   slidesPerView: 1,
   loop: true,
   speed: 1000,
@@ -23,21 +23,6 @@ let mySwiper = new Swiper('#tools', {
     },
   }
 });
-
-let projectSwiper = new Swiper('#project-imgs', {
-  hashNavigation: {
-    watchState: true,
-  },
-  navigation: {
-    nextEl: ".swiper-button-next",
-    prevEl: ".swiper-button-prev",
-  },
-  pagination: {
-    el: ".swiper-pagination",
-    clickable: true,
-  },
-});
-
 
 $(function () {
   // WOW js init
@@ -68,7 +53,17 @@ $(function () {
   
       $('#project-description').text(description);
       $('#project-link').text(link).attr('href', link);
-      $('#myModal').modal('show');      
+      
+    // Modal    
+    $('#myModal').modal('show');
+    
+    // Slider on projects section     
+    new Swiper('#project-imgs', {
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      }
+    });
   });
 
   // Close navbarmenu on click to items
