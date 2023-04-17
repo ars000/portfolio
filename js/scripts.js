@@ -1,7 +1,11 @@
+import DirectionReveal from './direction-reveal.js';
+
 // Loader
-$(window).on('load', function() {
-  $('.loader-wrap').delay(300).fadeOut('slow');
-});
+window.addEventListener('load', ()=> {
+  gsap.to('.loader-wrap', {opacity: 0, zIndex: '-1', duration: 0.5})
+})
+
+
 
 // Slider init
 new Swiper('#tools', {
@@ -24,69 +28,85 @@ new Swiper('#tools', {
   }
 });
 
-$(function () {
-  // WOW js init
-  new WOW().init();
 
-  // Hover effect
-  $(' .work ').hoverdir();
+// WOW js init
+new WOW().init();
 
-  // Filling modal window content from work
-  $('.work').click(function(e){
+
+// Filling modal window content from work
+const works = document.querySelectorAll('.work');
+const projectImgs = document.querySelector('#project-imgs');
+const modalTitle = document.querySelector('#modalLabel');
+const modalSwiper = document.querySelector('#project-imgs .swiper-wrapper');
+const projectDesc = document.querySelector('#project-description');
+const projectLink = document.querySelector('#project-link');
+
+works.forEach(function(item) {
+  
+  item.addEventListener('click', function(e) {
     e.preventDefault();
+    if(item.dataset.imgSrc) {
+      const srcAll = item.dataset.imgSrc.trim().split(',');
+      modalSwiper.innerHTML = ''
+      for(let i=0; i<srcAll.length; i++) {
+        modalSwiper.innerHTML += `<div class="swiper-slide">
+                    <img src="${srcAll[i]}" alt="" >
+                  </div>`
+      }
+    }
 
-    var title = $(this).find('.work-cover-name').text(),        
-          img = $(this).find('.work-img'),
-  
-        imgSrc = img.attr('src'),
-        imgSrc2 = img.attr('data-img-src2'),
-        imgSrc3 = img.attr('data-img-src3'),
-        imgSrc4 = img.attr('data-img-src4'),
-        description = $(this).attr('data-description'),
-        link = $(this).attr('href');
-  
-      $('.modal-title').text(title);
-      $('#project-img-1').attr('src', imgSrc);
-      $('#project-img-2').attr('src', imgSrc2);
-      $('#project-img-3').attr('src', imgSrc3);
-      $('#project-img-4').attr('src', imgSrc4);
-  
-      $('#project-description').text(description);
-      $('#project-link').text(link).attr('href', link);
-      
-    // Modal    
-    $('#myModal').modal('show');
+    projectDesc.innerHTML = item.dataset.description;
+    projectLink.innerHTML = item.getAttribute('href');
+    projectLink.setAttribute('href', item.getAttribute('href'));
+    modalTitle.innerHTML = item.querySelector('.work__cover-name').textContent;
+
+    // Modal
+    const myModal = new bootstrap.Modal('#myModal');
+    myModal.show()
     
-    // Slider on projects section     
-    new Swiper('#project-imgs', {
+    // Slider on projects section
+    new Swiper(projectImgs, {
       navigation: {
         nextEl: ".swiper-button-next",
         prevEl: ".swiper-button-prev",
       }
     });
-  });
-
-  // Close navbarmenu on click to items
-  let navMain = $("#navbarContent");
-  navMain.on("click", "a", null, function () {
-      navMain.collapse('hide');
-  });
+  })
+})
 
 
-  // Header background on scroll
-  setTimeout(() => {
-    if (window.scrollY > 100) {
-      $('body').addClass('scrolled');
-    }
+// Close navbarmenu on click to items
+const navLinks = document.querySelectorAll('.nav-link');
+const offcanvas = document.querySelector('#offcanvas');
+const bsOffcanvas = new bootstrap.Offcanvas(offcanvas);
 
-    $(window).on('scroll', function() {
-      if (window.scrollY > 100) {
-        $('body').addClass('scrolled');
-      } else {
-        $('body').removeClass('scrolled');
-      } 
-    });
-  }, 100)
+function checkOpen() {
+  let menuOpen = offcanvas.classList.contains('show');
+  if (menuOpen) {
+    bsOffcanvas.hide();
+  }    
+}
+
+navLinks.forEach((l) => {
+  l.addEventListener('click', function() {
+    checkOpen();      
+  })
+});
+  
+
+// Header background on scroll
+let scrollpos = window.scrollY;
+const body = document.querySelector('body');
+window.addEventListener('scroll', () => {
+  scrollpos = window.scrollY;
+  (scrollpos >= 100) ? body.classList.add('scrolled') : body.classList.remove('scrolled');
+})
+
+
+// Hover effect on works section
+const directionRevealSlide = DirectionReveal({
+  selector: '.direction-reveal--demo-slide',
+  animationName: 'slide'
 });
 
 

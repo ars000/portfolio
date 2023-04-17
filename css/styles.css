@@ -136,7 +136,7 @@ body.scrolled .header {
     width: 176px;
   }
 }
-@media (max-width: 767px) {
+@media (max-width: 991px) {
   .header .nav-item {
     text-align: center;
   }
@@ -144,7 +144,7 @@ body.scrolled .header {
 .header .nav-link {
   position: relative;
 }
-@media (max-width: 767px) {
+@media (max-width: 991px) {
   .header .nav-link {
     display: inline-block;
   }
@@ -157,6 +157,11 @@ body.scrolled .header {
   content: "";
   height: 4px;
   background-color: var(--bs-primary);
+}
+
+.offcanvas {
+  --bs-offcanvas-padding-y: 1.5rem;
+  --bs-offcanvas-padding-x: 1.5rem;
 }
 
 .section {
@@ -210,7 +215,7 @@ body.scrolled .header {
   background-size: cover;
   background-attachment: fixed;
 }
-.skills .skills-item {
+.skills .skills__item {
   display: flex;
 }
 .skills .card {
@@ -247,19 +252,19 @@ body.scrolled .header {
   border-radius: 50%;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
 }
-.steps .step-icon {
+.steps .step__icon {
   position: relative;
   margin: 0.5rem 0 -0.5rem;
   font-size: 3.25rem;
   color: #1f1dc3;
 }
-.steps .step-name {
+.steps .step__name {
   position: relative;
   font-size: 0.875rem;
   font-weight: 700;
   line-height: 1;
 }
-.steps .step-number {
+.steps .step__number {
   position: absolute;
   top: 0;
   right: 0;
@@ -289,30 +294,18 @@ body.scrolled .header {
   margin-bottom: 1rem;
   overflow: hidden;
 }
-.work-img {
-  max-width: 100%;
-  height: auto;
-}
-.work, .work img {
-  display: block;
-  position: relative;
-}
-.work .work-cover {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  display: flex !important;
-  justify-content: center;
+.work .work__cover {
+  display: flex;
   align-items: center;
-  background: rgba(79, 86, 94, 0.7);
+  justify-content: center;
 }
-.work .work-cover .work-cover-name {
+.work .work__cover .work__cover-name {
   display: inline-block;
   padding: 10px 0;
   color: #fff;
   text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2);
 }
-.work .work-cover .work-cover-name::after {
+.work .work__cover .work__cover-name::after {
   display: block;
   content: "";
   width: 100%;
