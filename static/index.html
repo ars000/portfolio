@@ -12,6 +12,7 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
   <link href="css/swiper-bundle.min.css" rel="stylesheet">
   <link href="css/animate.min.css" rel="stylesheet">
+  <link href="css/direction-reveal.css" rel="stylesheet">
   <link href="css/styles.css" rel="stylesheet">
 
   <!-- Favicon -->
@@ -36,11 +37,14 @@
         <a class="navbar-brand" href="/">
           <img class="logo" src="img/logo.svg" alt="">
         </a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
+        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvas" aria-controls="offcanvas" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse" id="navbarContent">
-          <ul class="menu navbar-nav flex-row-lg ms-auto">
+        <div class="offcanvas offcanvas-end text-bg-dark" id="offcanvas">
+          <div class="offcanvas-header">
+            <button type="button" class="btn-close btn-close-white ms-auto" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+          </div>
+          <ul class="menu navbar-nav flex-row-lg ms-lg-auto">
             <li class="nav-item"><a href="#about" class="nav-link">Обо мне</a></li>
             <li class="nav-item"><a href="#skills" class="nav-link">Навыки</a></li>
             <li class="nav-item"><a href="#process" class="nav-link">Процесс верстки</a></li>
@@ -529,7 +533,7 @@
       <div class="container">
         <h2 class="wow fadeInUp">Мои навыки</h2>
         <div id="skills-wrap" class="row">
-          <div class="skills-item col-sm-6 col-lg-4 wow fadeInUp" data-wow-delay="0.2s">
+          <div class="skills__item col-sm-6 col-lg-4 wow fadeInUp" data-wow-delay="0.2s">
             <div class="card">
               <div class="card-body">
                 <div class="card-icon">
@@ -552,7 +556,7 @@
             </div>
           </div>
 
-          <div class="skills-item col-sm-6 col-lg-4 wow fadeInUp" data-wow-delay="0.3s">
+          <div class="skills__item col-sm-6 col-lg-4 wow fadeInUp" data-wow-delay="0.3s">
             <div class="card">
               <div class="card-body">
                 <div class="card-icon">
@@ -575,7 +579,7 @@
             </div>
           </div>
 
-          <div class="skills-item col-sm-6 col-lg-4 wow fadeInUp" data-wow-delay="0.4s">
+          <div class="skills__item col-sm-6 col-lg-4 wow fadeInUp" data-wow-delay="0.4s">
             <div class="card">
               <div class="card-body">
                 <div class="card-icon">
@@ -597,7 +601,7 @@
             </div>
           </div>
 
-          <div class="skills-item col-sm-6 col-lg-4 wow fadeInUp" data-wow-delay="0.6s">
+          <div class="skills__item col-sm-6 col-lg-4 wow fadeInUp" data-wow-delay="0.6s">
             <div class="card">
               <div class="card-body">
                 <div class="card-icon">
@@ -620,7 +624,7 @@
             </div>
           </div>
 
-          <div class="skills-item col-sm-6 col-lg-4 wow fadeInUp" data-wow-delay="0.8s">
+          <div class="skills__item col-sm-6 col-lg-4 wow fadeInUp" data-wow-delay="0.8s">
             <div class="card">
               <div class="card-body">
                 <div class="card-icon">
@@ -643,7 +647,7 @@
             </div>
           </div>
 
-          <div class="skills-item col-sm-6 col-lg-4 wow fadeInUp" data-wow-delay="1s">
+          <div class="skills__item col-sm-6 col-lg-4 wow fadeInUp" data-wow-delay="1s">
             <div class="card">
               <div class="card-body">
                 <div class="card-icon">
@@ -675,56 +679,56 @@
         <div class="row steps">
           <div class="col-lg-2 col-md-4 col-6">
             <div class="step wow zoomIn" data-wow-delay="0.2s">
-              <div class="step-number">1</div>
-              <div class="step-icon">
+              <div class="step__number">1</div>
+              <div class="step__icon">
                 <span class="icon-scissors"></span>
               </div>
-              <div class="step-name">Работа с<br> макетом</div>
+              <div class="step__name">Работа с<br> макетом</div>
             </div>
           </div>
           <div class="col-lg-2 col-md-4 col-6">
             <div class="step wow zoomIn" data-wow-delay="0.4s">
-              <div class="step-number">2</div>
-              <div class="step-icon">
+              <div class="step__number">2</div>
+              <div class="step__icon">
                 <span class="icon-html5"></span>
               </div>
-              <div class="step-name">Верстка<br> контента</div>
+              <div class="step__name">Верстка<br> контента</div>
             </div>
           </div>
           <div class="col-lg-2 col-md-4 col-6">
             <div class="step wow zoomIn" data-wow-delay="0.6s">
-              <div class="step-number">3</div>
-              <div class="step-icon">
+              <div class="step__number">3</div>
+              <div class="step__icon">
                 <span class="icon-css3"></span>
               </div>
-              <div class="step-name">Стилизация<br> сайта</div>
+              <div class="step__name">Стилизация<br> сайта</div>
             </div>
           </div>
           <div class="col-lg-2 col-md-4 col-6">
             <div class="step wow zoomIn" data-wow-delay="0.8s">
-              <div class="step-number">4</div>
-              <div class="step-icon">
+              <div class="step__number">4</div>
+              <div class="step__icon">
                 <span class="icon-mobile"></span>
               </div>
-              <div class="step-name">Адаптивная<br> верстка</div>
+              <div class="step__name">Адаптивная<br> верстка</div>
             </div>
           </div>
           <div class="col-lg-2 col-md-4 col-6">
             <div class="step wow zoomIn" data-wow-delay="1s">
-              <div class="step-number">5</div>
-              <div class="step-icon">
+              <div class="step__number">5</div>
+              <div class="step__icon">
                 <span class="icon-chrome"></span>
               </div>
-              <div class="step-name">Проверка в<br> браузерах</div>
+              <div class="step__name">Проверка в<br> браузерах</div>
             </div>
           </div>
           <div class="col-lg-2 col-md-4 col-6">
             <div class="step wow zoomIn" data-wow-delay="1.2s">
-              <div class="step-number">6</div>
-              <div class="step-icon">
+              <div class="step__number">6</div>
+              <div class="step__icon">
                 <span class="icon-warning"></span>
               </div>
-              <div class="step-name">Устранение<br> ошибок</div>
+              <div class="step__name">Устранение<br> ошибок</div>
             </div>
           </div>
         </div>
@@ -766,178 +770,150 @@
     <section id="works" class="section works">
       <div class="container">
         <h2 class="wow fadeInUp">Мои работы</h2>
-        <div id="works-wrap" class="row works-wrap">
+        <div id="works-wrap" class="row works-wrap direction-reveal direction-reveal--demo-slide">
           <div class="col-sm-6 col-lg-4 wow zoomIn">
-            <a class="work" href="https://dbesystems.com/" data-description="Веб сайт компании, которая занимается подключением оптоволоконной и беспроводной сетями.">
-              <img class="work-img" src="./img/works-img/dbe/dbe.jpg" 
-                data-img-src2="./img/works-img/dbe/dbe-about.jpg"
-                data-img-src3="./img/works-img/dbe/dbe-network.jpg"
-                data-img-src4="./img/works-img/dbe/dbe-software.jpg"                
-                alt="Work img" >
-              <div class="work-cover">
-                <h4 class="work-cover-name">DBE Systems</h4>
+            <a class="work direction-reveal__card" href="https://dbesystems.com/" 
+              data-description="Веб сайт компании, которая занимается подключением оптоволоконной и беспроводной сетями." 
+              data-img-src="./img/works-img/dbe/dbe.jpg,./img/works-img/dbe/dbe-about.jpg, ./img/works-img/dbe/dbe-network.jpg, ./img/works-img/dbe/dbe-software.jpg">
+              <img class="work__img direction-reveal__img" src="./img/works-img/dbe/dbe.jpg" alt="Work img" >
+              <div class="work__cover direction-reveal__overlay direction-reveal__anim--enter">
+                <h4 class="work__cover-name direction-reveal__title">DBE Systems</h4>
               </div>
             </a>
           </div>
           <div class="col-sm-6 col-lg-4 wow zoomIn">
-            <a class="work" href="https://bdswiss.com/" data-description="Веб приложение для торговли драгоценными металлами.">
-              <img class="work-img" src="./img/works-img/bdswiss/bdswiss.png"
-                data-img-src2="./img/works-img/bdswiss/bdswiss-positions.png"
-                data-img-src3="./img/works-img/bdswiss/bdswiss-tablet.png"
-                data-img-src4="./img/works-img/bdswiss/bdswiss-mobile.png" 
-                alt="Work img" >
-              <div class="work-cover">
-                <h4 class="work-cover-name">BDSWISS Metals Trading</h4>
+            <a class="work direction-reveal__card" href="https://bdswiss.com/" 
+              data-description="Веб приложение для торговли драгоценными металлами."
+              data-img-src="./img/works-img/bdswiss/bdswiss.png,./img/works-img/bdswiss/bdswiss-positions.png,./img/works-img/bdswiss/bdswiss-tablet.png,./img/works-img/bdswiss/bdswiss-mobile.png">
+              <img class="work__img direction-reveal__img" src="./img/works-img/bdswiss/bdswiss.png" alt="Work img" >
+              <div class="work__cover direction-reveal__overlay direction-reveal__anim--enter">
+                <h4 class="work__cover-name direction-reveal__title">BDSWISS Metals Trading</h4>
               </div>
             </a>
           </div>
           <div class="col-sm-6 col-lg-4 wow zoomIn">
-            <a class="work" href="https://rightandabove.com/" data-description="Веб сайт компании.">
-              <img class="work-img" src="./img/works-img/raa/raa.jpg"
-                data-img-src2="./img/works-img/raa/raa-portfolio.jpg"
-                data-img-src3="./img/works-img/raa/raa-services.jpg"
-                data-img-src4="./img/works-img/raa/raa-inner.jpg" 
-                alt="Work img" >
-              <div class="work-cover">
-                <h4 class="work-cover-name">Right&Above Website</h4>
+            <a class="work direction-reveal__card" href="https://rightandabove.com/" 
+              data-description="Веб сайт компании."
+              data-img-src="./img/works-img/raa/raa.jpg,./img/works-img/raa/raa-portfolio.jpg,./img/works-img/raa/raa-services.jpg,./img/works-img/raa/raa-inner.jpg">
+              <img class="work__img direction-reveal__img" src="./img/works-img/raa/raa.jpg" alt="Work img" >
+              <div class="work__cover direction-reveal__overlay direction-reveal__anim--enter">
+                <h4 class="work__cover-name direction-reveal__title">Right&Above Website</h4>
               </div>
             </a>
           </div>
           <div class="col-sm-6 col-lg-4 wow zoomIn">
-            <a class="work" href="https://klarpay.com/" data-description="Веб приложение для предоставления финансовых услуг.">
-              <img class="work-img" src="./img/works-img/klarpayDashboard/klarpay-dashboard.jpg"
-                data-img-src2="./img/works-img/klarpayDashboard/klarpay-dashboard-actions.jpg"
-                data-img-src3="./img/works-img/klarpayDashboard/klarpay-dashboard-login.jpg"
-                data-img-src4="./img/works-img/klarpayDashboard/klarpay-dashboard-mobile.png"
-                alt="Work img" >
-              <div class="work-cover">
-                <h4 class="work-cover-name">Klarpay Dashboard</h4>
+            <a class="work direction-reveal__card" href="https://klarpay.com/" 
+              data-description="Веб приложение для предоставления финансовых услуг."
+              data-img-src="./img/works-img/klarpayDashboard/klarpay-dashboard.jpg,./img/works-img/klarpayDashboard/klarpay-dashboard-actions.jpg,./img/works-img/klarpayDashboard/klarpay-dashboard-login.jpg,./img/works-img/klarpayDashboard/klarpay-dashboard-mobile.png">
+              <img class="work__img direction-reveal__img" src="./img/works-img/klarpayDashboard/klarpay-dashboard.jpg" alt="Work img">
+              <div class="work__cover direction-reveal__overlay direction-reveal__anim--enter">
+                <h4 class="work__cover-name direction-reveal__title">Klarpay Dashboard</h4>
               </div>
             </a>
           </div>
           <div class="col-sm-6 col-lg-4 wow zoomIn">
-            <a class="work" href="https://sparlingfinancial.com/" data-description="Веб сайт компании которая занимается торговлей криптовалютой.">
-              <img class="work-img" src="./img/works-img/sparling/sparling.jpg"
-                data-img-src2="./img/works-img/sparling/sparling-about.jpg"
-                data-img-src3="./img/works-img/sparling/sparling-contacts.jpg"
-                data-img-src4="./img/works-img/sparling/sparling-login.png"
-                alt="Work img" >
-              <div class="work-cover">
-                <h4 class="work-cover-name">Sparling Financial</h4>
+            <a class="work direction-reveal__card" href="https://sparlingfinancial.com/" 
+              data-description="Веб сайт компании которая занимается торговлей криптовалютой."
+              data-img-src="./img/works-img/sparling/sparling.jpg,./img/works-img/sparling/sparling-about.jpg,./img/works-img/sparling/sparling-contacts.jpg,./img/works-img/sparling/sparling-login.png">
+              <img class="work__img direction-reveal__img" src="./img/works-img/sparling/sparling.jpg" alt="Work img" >
+              <div class="work__cover direction-reveal__overlay direction-reveal__anim--enter">
+                <h4 class="work__cover-name direction-reveal__title">Sparling Financial</h4>
               </div>
             </a>
           </div>
           <div class="col-sm-6 col-lg-4 wow zoomIn">
-            <a class="work" href="https://klarpay.com/" data-description="Веб сайт компании которая предоставляет финансовые услуги.">
-              <img class="work-img" src="./img/works-img/klarpayWebsite/klarpayWebsite.jpg"
-                data-img-src2="./img/works-img/klarpayWebsite/klarpayWebsite-applepay.jpg"
-                data-img-src3="./img/works-img/klarpayWebsite/klarpayWebsite-news.jpg"
-                data-img-src4="./img/works-img/klarpayWebsite/klarpayWebsite-mobile.jpg"
-                alt="Work img" >
-              <div class="work-cover">
-                <h4 class="work-cover-name">Klarpay Website</h4>
+            <a class="work direction-reveal__card" href="https://klarpay.com/" 
+              data-description="Веб сайт компании которая предоставляет финансовые услуги."
+              data-img-src="./img/works-img/klarpayWebsite/klarpayWebsite.jpg,./img/works-img/klarpayWebsite/klarpayWebsite-applepay.jpg,./img/works-img/klarpayWebsite/klarpayWebsite-news.jpg,./img/works-img/klarpayWebsite/klarpayWebsite-mobile.jpg">
+              <img class="work__img direction-reveal__img" src="./img/works-img/klarpayWebsite/klarpayWebsite.jpg" alt="Work img" >
+              <div class="work__cover direction-reveal__overlay direction-reveal__anim--enter">
+                <h4 class="work__cover-name direction-reveal__title">Klarpay Website</h4>
               </div>
             </a>
           </div>
           <div class="col-sm-6 col-lg-4 wow zoomIn">
-            <a class="work" href="" data-description="Веб сайт стартапа.">
-              <img class="work-img" src="./img/works-img/reelgenie/reelgenie-homepage.jpg"
-                data-img-src2="./img/works-img/reelgenie/reelgenie-about.jpg"
-                data-img-src3="./img/works-img/reelgenie/reelgenie-tech.jpg"
-                data-img-src4="./img/works-img/reelgenie/reelgenie-api.jpg"
-                alt="Work img" >
-              <div class="work-cover">
-                <h4 class="work-cover-name">Reel Genie</h4>
+            <a class="work direction-reveal__card" href="" 
+              data-description="Веб сайт стартапа."
+              data-img-src="./img/works-img/reelgenie/reelgenie-homepage.jpg,./img/works-img/reelgenie/reelgenie-about.jpg,./img/works-img/reelgenie/reelgenie-tech.jpg,./img/works-img/reelgenie/reelgenie-api.jpg">
+              <img class="work__img direction-reveal__img" src="./img/works-img/reelgenie/reelgenie-homepage.jpg" alt="Work img">
+              <div class="work__cover direction-reveal__overlay direction-reveal__anim--enter">
+                <h4 class="work__cover-name direction-reveal__title">Reel Genie</h4>
               </div>
             </a>
           </div>
           <div class="col-sm-6 col-lg-4 wow zoomIn">
-            <a class="work" href="" data-description="Веб приложение для внутреннего пользования компании Docomo.">
-              <img class="work-img" src="./img/works-img/docomo/docomo.png"
-                data-img-src2="./img/works-img/docomo/docomo-profile.png"
-                data-img-src3="./img/works-img/docomo/docomo-staff.png"
-                data-img-src4="./img/works-img/docomo/docomo-login.png" 
-                alt="Work img" >
-              <div class="work-cover">
-                <h4 class="work-cover-name">Docomo Dess</h4>
+            <a class="work direction-reveal__card" href="" 
+              data-description="Веб приложение для внутреннего пользования компании Docomo."
+              data-img-src="./img/works-img/docomo/docomo.png,./img/works-img/docomo/docomo-profile.png,./img/works-img/docomo/docomo-staff.png,./img/works-img/docomo/docomo-login.png">
+              <img class="work__img direction-reveal__img" src="./img/works-img/docomo/docomo.png" alt="Work img">
+              <div class="work__cover direction-reveal__overlay direction-reveal__anim--enter">
+                <h4 class="work__cover-name direction-reveal__title">Docomo Dess</h4>
               </div>
             </a>
           </div>          
           <div class="col-sm-6 col-lg-4 wow zoomIn">
-            <a class="work" href="" data-description="Веб приложение для внутреннего пользования компании Comodo.">
-              <img class="work-img" src="./img/works-img/comodo/comodo.png"
-                data-img-src2="./img/works-img/comodo/comodo-preferences.png"
-                data-img-src3="./img/works-img/comodo/comodo-user.png"
-                data-img-src4="./img/works-img/comodo/comodo-group.png" 
-                alt="Work img" >
-              <div class="work-cover">
-                <h4 class="work-cover-name">Comodo SecureBox</h4>
+            <a class="work direction-reveal__card" href="" 
+              data-description="Веб приложение для внутреннего пользования компании Comodo."
+              data-img-src="./img/works-img/comodo/comodo.png,./img/works-img/comodo/comodo-preferences.png,./img/works-img/comodo/comodo-user.png,./img/works-img/comodo/comodo-group.png">
+              <img class="work__img direction-reveal__img" src="./img/works-img/comodo/comodo.png" alt="Work img" >
+              <div class="work__cover direction-reveal__overlay direction-reveal__anim--enter">
+                <h4 class="work__cover-name direction-reveal__title">Comodo SecureBox</h4>
               </div>
             </a>
           </div>
           <div class="col-sm-6 col-lg-4 wow zoomIn">
-            <a class="work" href="" data-description="Веб сайт компании.">
-              <img class="work-img" src="./img/works-img/advertisingAnalytics/advertisingAnalytics.jpg"
-                data-img-src2="./img/works-img/advertisingAnalytics/advertisingAnalytics-products.jpg"
-                data-img-src3="./img/works-img/advertisingAnalytics/advertisingAnalytics-admo.jpg"
-                data-img-src4="./img/works-img/advertisingAnalytics/advertisingAnalytics-tablet.jpg"
-                alt="Work img" >
-              <div class="work-cover">
-                <h4 class="work-cover-name">Advertising Analytics</h4>
+            <a class="work direction-reveal__card" href="" 
+              data-description="Веб сайт компании."
+              data-img-src="./img/works-img/advertisingAnalytics/advertisingAnalytics.jpg,./img/works-img/advertisingAnalytics/advertisingAnalytics-products.jpg,./img/works-img/advertisingAnalytics/advertisingAnalytics-admo.jpg,./img/works-img/advertisingAnalytics/advertisingAnalytics-tablet.jpg">
+              <img class="work__img direction-reveal__img" src="./img/works-img/advertisingAnalytics/advertisingAnalytics.jpg" alt="Work img" >
+              <div class="work__cover direction-reveal__overlay direction-reveal__anim--enter">
+                <h4 class="work__cover-name direction-reveal__title">Advertising Analytics</h4>
               </div>
             </a>
           </div>
           <div class="col-sm-6 col-lg-4 wow zoomIn">
-            <a class="work" href="" data-description="Веб приложение для внутреннего пользования компании Airbox.">
-              <img class="work-img" src="./img/works-img/airbox/airbox.png"
-                data-img-src2="./img/works-img/airbox/airbox-logos.png"
-                data-img-src3="./img/works-img/airbox/airbox-mapping.png"
-                data-img-src4="./img/works-img/airbox/airbox-poster.png"
-                alt="Work img" >
-              <div class="work-cover">
-                <h4 class="work-cover-name">Airbox</h4>
+            <a class="work direction-reveal__card" href="" 
+              data-description="Веб приложение для внутреннего пользования компании Airbox."
+              data-img-src="./img/works-img/airbox/airbox.png,./img/works-img/airbox/airbox-logos.png,./img/works-img/airbox/airbox-mapping.png,./img/works-img/airbox/airbox-poster.png">
+              <img class="work__img direction-reveal__img" src="./img/works-img/airbox/airbox.png" alt="Work img" >
+              <div class="work__cover direction-reveal__overlay direction-reveal__anim--enter">
+                <h4 class="work__cover-name direction-reveal__title">Airbox</h4>
               </div>
             </a>
           </div>
           <div class="col-sm-6 col-lg-4 wow zoomIn">
-            <a class="work" href="https://connectedinvestors.com/" data-description="Веб сайт компании.">
-              <img class="work-img" src="./img/works-img/connectedInvestors/connectedInvestors.jpg"
-                data-img-src2="./img/works-img/connectedInvestors/connectedInvestors-insights.jpg"
-                data-img-src3="./img/works-img/connectedInvestors/connectedInvestors-platform.jpg"
-                data-img-src4="./img/works-img/connectedInvestors/connectedInvestors-mobile.jpg"
-                alt="Work img" >
-              <div class="work-cover">
-                <h4 class="work-cover-name">Connected Investors</h4>
+            <a class="work direction-reveal__card" href="https://connectedinvestors.com/" 
+              data-description="Веб сайт компании."
+              data-img-src="./img/works-img/connectedInvestors/connectedInvestors.jpg,./img/works-img/connectedInvestors/connectedInvestors-insights.jpg,./img/works-img/connectedInvestors/connectedInvestors-platform.jpg,./img/works-img/connectedInvestors/connectedInvestors-mobile.jpg">
+              <img class="work__img direction-reveal__img" src="./img/works-img/connectedInvestors/connectedInvestors.jpg" alt="Work img" >
+              <div class="work__cover direction-reveal__overlay direction-reveal__anim--enter">
+                <h4 class="work__cover-name direction-reveal__title">Connected Investors</h4>
               </div>
             </a>
           </div>
           <div class="col-sm-6 col-lg-4 wow zoomIn">
-            <a class="work" href="https://transientx.com/" data-description="Веб сайт компании TransientX.">
-              <img class="work-img" src="./img/works-img/transientx/transientx.jpg"
-                data-img-src2="./img/works-img/transientx/transientx-access.jpg"
-                data-img-src3="./img/works-img/transientx/transientx-access-need.jpg"
-                data-img-src4="./img/works-img/transientx/transientx-mobile.jpg"
-                alt="Work img" >
-              <div class="work-cover">
-                <h4 class="work-cover-name">TransientX</h4>
+            <a class="work direction-reveal__card" href="https://transientx.com/" 
+              data-description="Веб сайт компании TransientX."
+              data-img-src="./img/works-img/transientx/transientx.jpg,./img/works-img/transientx/transientx-access.jpg,./img/works-img/transientx/transientx-access-need.jpg,./img/works-img/transientx/transientx-mobile.jpg">
+              <img class="work__img direction-reveal__img" src="./img/works-img/transientx/transientx.jpg" alt="Work img" >
+              <div class="work__cover direction-reveal__overlay direction-reveal__anim--enter">
+                <h4 class="work__cover-name direction-reveal__title">TransientX</h4>
               </div>
             </a>
           </div>          
           <div class="col-sm-6 col-lg-4 wow zoomIn">
-            <a class="work" href="" data-description="Продукт, который подключает локальные приложения на устройствах к своим серверам, используя изолированные оверлейные сети, созданные для отдельных пользователей.">
-              <img class="work-img" src="./img/works-img/appflareDashboard/appflareDashboard.jpg"
-                data-img-src2="./img/works-img/appflareDashboard/appflareDashboard-app.jpg"
-                data-img-src3="./img/works-img/appflareDashboard/appflareDashboard-workspaces.jpg"
-                data-img-src4="./img/works-img/appflareDashboard/appflareDashboard-login.jpg" 
-                alt="Work img" >
-              <div class="work-cover">
-                <h4 class="work-cover-name">Appflare</h4>
+            <a class="work direction-reveal__card" href="" 
+              data-description="Продукт, который подключает локальные приложения на устройствах к своим серверам, используя изолированные оверлейные сети, созданные для отдельных пользователей."
+              data-img-src="./img/works-img/appflareDashboard/appflareDashboard.jpg,./img/works-img/appflareDashboard/appflareDashboard-app.jpg,./img/works-img/appflareDashboard/appflareDashboard-workspaces.jpg,./img/works-img/appflareDashboard/appflareDashboard-login.jpg">
+              <img class="work__img direction-reveal__img" src="./img/works-img/appflareDashboard/appflareDashboard.jpg" alt="Work img" >
+              <div class="work__cover direction-reveal__overlay direction-reveal__anim--enter">
+                <h4 class="work__cover-name direction-reveal__title">Appflare</h4>
               </div>
             </a>
           </div>
         </div>
       </div>
-    </section>        
+    </section>
   </main>
   <!-- /Content -->
 
@@ -958,18 +934,7 @@
                 <!-- Slider -->
                 <div id="project-imgs" class="swiper">
                   <div class="swiper-wrapper">
-                    <div class="swiper-slide">
-                      <img id="project-img-1" src="img/works-img/dbe/dbe.jpg" alt="" >
-                    </div>
-                    <div class="swiper-slide">
-                      <img id="project-img-2" src="img/works-img/dbe/dbe-about.jpg" alt="" >
-                    </div>
-                    <div class="swiper-slide">
-                      <img id="project-img-3" src="img/works-img/dbe/dbe-network.jpg" alt="" >
-                    </div>
-                    <div class="swiper-slide">
-                      <img id="project-img-4" src="img/works-img/dbe/dbe-software.jpg" alt="" >
-                    </div>
+                    <!-- code insertion from js -->
                   </div>                  
                   <div class="swiper-button-next"></div>
                   <div class="swiper-button-prev"></div>
@@ -994,12 +959,10 @@
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js" integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-kjU+l4N0Yf4ZOJErLsIcvOU2qSb74wXpOhqTvwVx3OElZRweTnQ6d31fXEoRD1Jy" crossorigin="anonymous"></script>
   <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
-  <script src="js/jquery.hoverdir.js"></script>
   <script src="js/wow.min.js"></script>
   <script src="https://cdn.lordicon.com/xdjxvujz.js"></script>
   <script src="js/gsap.min.js"></script>
   <script src="js/ScrollTrigger.min.js"></script>
-  <script src="js/scripts.js"></script>
+  <script src="js/scripts.js" type="module"></script>
 </body>
 </html>
