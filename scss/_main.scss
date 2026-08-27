@@ -44,7 +44,7 @@ body {
   transition: padding ease 0.1s;
 
   &.scrolled {
-    padding-top: 64px;
+    // padding-top: 64px;
 
     .header {
       background-color: rgba(0, 0, 0, .8);
@@ -138,8 +138,17 @@ body {
   h2 {
     margin-bottom: 3rem;
     text-align: center;
-  }  
+  }
+  
+  &:not(.hero):before {
+    display: block;
+    content: '';
+    margin-top: -8rem;
+    height: 8rem;
+    visibility: hidden;
+  }
 }
+
 
 .mask {
   color: #fff;
@@ -299,6 +308,7 @@ body {
       display: inline-block;
       padding: 10px 0;
       color: #fff;
+      text-align: center;
       text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2);
 
       &::after {
