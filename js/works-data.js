@@ -1,6 +1,67 @@
 /** Список работ портфолио — правьте этот массив, чтобы добавить или убрать проекты */
 export const worksData = [
   {
+    title: 'vertera',
+    href: 'https://vertera.org/',
+    description:
+      'Интернет-магазин здоровья и красоты из ламинарии.',
+    images: [
+      './img/works-img/vertera/screen-1.webp',
+      './img/works-img/vertera/screen-2.webp',
+      './img/works-img/vertera/screen-3.webp',
+      './img/works-img/vertera/screen-4.webp',
+      './img/works-img/vertera/screen-5.webp',
+      './img/works-img/vertera/screen-6.webp',
+      './img/works-img/vertera/screen-7.webp',
+      './img/works-img/vertera/screen-8.webp',
+      './img/works-img/vertera/screen-9.webp',
+      './img/works-img/vertera/screen-10.webp',
+    ],
+  },
+  {
+    title: 'vertera global',
+    href: 'https://vertera.global/',
+    description:
+      'Сайт компании Vertera — производителя продукции из морских водорослей и платформы для сетевого предпринимательства.',
+    images: [
+      './img/works-img/vertera-global/screen-1.webp',
+      './img/works-img/vertera-global/screen-2.webp',
+      './img/works-img/vertera-global/screen-3.webp',
+      './img/works-img/vertera-global/screen-4.webp',
+      './img/works-img/vertera-global/screen-5.webp',
+      './img/works-img/vertera-global/screen-6.webp',
+      './img/works-img/vertera-global/screen-7.webp',
+      './img/works-img/vertera-global/screen-8.webp',
+      './img/works-img/vertera-global/screen-9.webp',
+      './img/works-img/vertera-global/screen-10.webp',
+      './img/works-img/vertera-global/screen-11.webp',
+      './img/works-img/vertera-global/screen-12.webp',
+    ],
+  },
+  {
+    title: 'Кабинета партнёра Boss',
+    href: 'https://boss.vertera.org/',
+    description:
+      'Кабинет партнёра компании Vertera. Где участник может покупать продукты в каталоге по партнерским ценам и участвовать в акциях компании.',
+    images: [
+      './img/works-img/boss/screen-1.webp',
+      './img/works-img/boss/screen-2.webp',
+      './img/works-img/boss/screen-3.webp',
+      './img/works-img/boss/screen-4.webp',
+      './img/works-img/boss/screen-5.webp',
+      './img/works-img/boss/screen-6.webp',
+      './img/works-img/boss/screen-7.webp',
+      './img/works-img/boss/screen-8.webp',
+      './img/works-img/boss/screen-9.webp',
+      './img/works-img/boss/screen-10.webp',
+      './img/works-img/boss/screen-11.webp',
+      './img/works-img/boss/screen-12.webp',
+      './img/works-img/boss/screen-13.webp',
+      './img/works-img/boss/screen-14.webp',
+      './img/works-img/boss/screen-15.webp',
+    ],
+  },
+  {
     title: 'Международная Академия Гомеостаза',
     href: 'https://vertera.academy/',
     description:
@@ -15,6 +76,19 @@ export const worksData = [
       './img/works-img/academy/screen-7.webp',
       './img/works-img/academy/screen-8.webp',
       './img/works-img/academy/screen-9.webp',
+    ],
+  },
+  {
+    title: 'Boss Admin',
+    href: '',
+    description:
+      'Веб-приложение для внутреннего использования администраторами кабинета партнёра Boss.',
+    images: [
+      './img/works-img/boss-admin/screen-1.webp',
+      './img/works-img/boss-admin/screen-2.webp',
+      './img/works-img/boss-admin/screen-3.webp',
+      './img/works-img/boss-admin/screen-4.webp',
+      './img/works-img/boss-admin/screen-5.webp',
     ],
   },
   {
@@ -34,20 +108,7 @@ export const worksData = [
       './img/works-img/pediatric-nutrition/screen-9.webp',
       './img/works-img/pediatric-nutrition/screen-10.webp',
     ],
-  },
-  {
-    title: 'Boss Admin',
-    href: '',
-    description:
-      'Веб-приложение для внутреннего использования администраторами кабинета партнёра Boss.',
-    images: [
-      './img/works-img/boss-admin/screen-1.webp',
-      './img/works-img/boss-admin/screen-2.webp',
-      './img/works-img/boss-admin/screen-3.webp',
-      './img/works-img/boss-admin/screen-4.webp',
-      './img/works-img/boss-admin/screen-5.webp',
-    ],
-  },
+  },  
   {
     title: 'Pharmpolymer',
     href: 'https://pharmpolymer.com/',
