@@ -9,28 +9,41 @@
     content="Сайт портфолио Арсена Вадиева - HTML верстальщик. Верстка сайтов, Landing, интернет-магазинов (фиксированная, резиновая, адаптивная).">
   <title>Сайт портфолио Арсена Вадиева - HTML верстальщик</title>
 
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://cdn.lordicon.com">
+
   <!-- Styles -->
   <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
-  <link href="css/swiper-bundle.min.css" rel="stylesheet">
-  <link href="css/animate.min.css" rel="stylesheet">
-  <link href="css/direction-reveal.css" rel="stylesheet">
-  <link href="css/styles.css" rel="stylesheet">
+  <style>
+    .loader-wrap {
+      position: fixed;
+      inset: 0;
+      z-index: 2000;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background-color: #000;
+    }
+  </style>
 
   <!-- Favicon -->
-  <link rel="apple-touch-icon" sizes="180x180" href="favicons/apple-touch-icon.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="favicons/favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="favicons/favicon-16x16.png">
-  <link rel="manifest" href="favicons/site.webmanifest">
-  <link rel="mask-icon" href="favicons/safari-pinned-tab.svg" color="#ffa104">
+  <link rel="apple-touch-icon" sizes="180x180" href="./assets/apple-touch-icon-CJxvvn-b.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32-mnD-QdkQ.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="./assets/favicon-16x16-CB7EkYhx.png">
+  <link rel="manifest" href="./assets/site-gNx0sMR_.webmanifest">
+  <link rel="mask-icon" href="./assets/safari-pinned-tab-aU5Qen0Q.svg" color="#ffa104">
   <meta name="msapplication-TileColor" content="#2b5797">
   <meta name="theme-color" content="#ffffff">
+  <script type="module" crossorigin src="./assets/index-eiEdYNae.js"></script>
+  <link rel="stylesheet" crossorigin href="./assets/index-BNbx01sa.css">
 </head>
 
 <body>
+  <a class="skip-link" href="#main">Перейти к содержимому</a>
+
   <!-- Loader -->
-  <div class="loader-wrap">
+  <div class="loader-wrap" role="status" aria-live="polite" aria-label="Загрузка">
     <span class="loader"></span>
   </div>
 
@@ -38,8 +51,8 @@
   <header class="header fixed-top">
     <nav id="navbar" class="navbar navbar-dark navbar-expand-lg container flex-wrap flex-lg-nowrap">
       <div class="container-fluid">
-        <a class="navbar-brand" href="/">
-          <img class="logo" src="img/logo.svg" alt="">
+        <a class="navbar-brand" href="./" aria-label="Арсен Вадиев — HTML верстальщик">
+          <img class="logo" src="data:image/svg+xml,%3csvg%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20221%2042'%3e%3cg%20clip-path='url(%23a)'%3e%3cpath%20d='M.8%2023.84v-1.68c0-.613.387-1.173%201.16-1.68l16-10.8a.916.916%200%200%201%20.48-.12c.213%200%20.4.08.56.24.16.16.24.36.24.6v6.48c0%20.667-.427%201.253-1.28%201.76l-7%204.36%207%204.4c.267.16.453.28.56.36.133.08.28.253.44.52.187.24.28.52.28.84v6.48c0%20.24-.08.44-.24.6a.768.768%200%200%201-.56.24.916.916%200%200%201-.48-.12l-16-10.8C1.187%2025.013.8%2024.453.8%2023.84ZM32.61%209h8.68c.96%200%201.56.44%201.8%201.32l8.92%2025.52c.027.08.04.213.04.4%200%20.16-.093.333-.28.52-.16.16-.36.24-.6.24h-7.4c-.8%200-1.32-.333-1.56-1l-.96-2.64h-8.6L31.69%2036c-.24.667-.76%201-1.56%201h-7.4a.956.956%200%200%201-.64-.24c-.16-.187-.24-.36-.24-.52%200-.187.013-.32.04-.4l8.92-25.52c.24-.88.84-1.32%201.8-1.32Zm2.08%2016.56h4.52l-2.28-7.44-2.24%207.44ZM72.776%209h7.44c.24%200%20.44.093.6.28.187.16.28.32.28.48%200%20.16-.013.293-.04.4l-7.52%2025.52c-.24.88-.84%201.32-1.8%201.32h-9.12c-.96%200-1.56-.44-1.8-1.32l-7.52-25.52a1.681%201.681%200%200%201-.04-.4c0-.16.08-.32.24-.48a.88.88%200%200%201%20.64-.28h7.44c.96%200%201.56.44%201.8%201.32l3.8%2014.88%203.8-14.88c.24-.88.84-1.32%201.8-1.32ZM83.08%2031.04c0-3.6%202.92-5.907%208.76-6.92l4.24-.68c0-.8-.067-1.333-.2-1.6-.134-.293-.454-.44-.96-.44-.48%200-.96.213-1.44.64-.48.427-.934.64-1.36.64h-6.8c-.587%200-.88-.28-.88-.84%200-.587.2-1.2.6-1.84.426-.667%201.026-1.32%201.8-1.96.8-.64%201.906-1.173%203.32-1.6%201.44-.427%203.04-.64%204.8-.64%203.573%200%206.253.747%208.04%202.24%201.786%201.493%202.68%203.627%202.68%206.4v11.48c0%20.293-.107.547-.32.76a1.04%201.04%200%200%201-.76.32h-7c-.294%200-.547-.107-.76-.32a1.038%201.038%200%200%201-.32-.76V34.8c-1.254%201.733-3.08%202.6-5.48%202.6-2.4%200-4.334-.6-5.8-1.8-1.44-1.227-2.16-2.747-2.16-4.56Zm10.52.44c1.733%200%202.6-1.04%202.6-3.12l-2.36.52c-1.174.267-1.76.76-1.76%201.48%200%20.32.133.587.4.8.266.213.64.32%201.12.32Zm15.261-3.32V25c0-2.987.8-5.267%202.4-6.84%201.6-1.573%203.547-2.36%205.84-2.36%202.32%200%204.173.627%205.56%201.88v-8c0-.293.107-.547.32-.76.213-.213.467-.32.76-.32h7.4c.293%200%20.547.107.76.32.213.213.32.467.32.76v26.24c0%20.293-.107.547-.32.76-.213.213-.467.32-.76.32h-6.8c-.293%200-.547-.107-.76-.32a1.04%201.04%200%200%201-.32-.76v-1.2c-1.387%201.787-3.347%202.68-5.88%202.68s-4.587-.747-6.16-2.24c-1.573-1.52-2.36-3.853-2.36-7Zm13.8-.24v-2.96c-.08-1.333-.747-2-2-2-1.333%200-2%20.773-2%202.32v2.64c0%201.547.667%202.32%202%202.32s2-.773%202-2.32ZM144.459%2037h-7.16c-.294%200-.547-.107-.76-.32a1.036%201.036%200%200%201-.32-.76V17.28c0-.293.106-.547.32-.76.213-.213.466-.32.76-.32h7.16c.293%200%20.546.107.76.32.213.213.32.467.32.76v18.64c0%20.293-.107.547-.32.76a1.04%201.04%200%200%201-.76.32Zm.88-28.52v4.84c0%20.293-.107.547-.32.76a1.04%201.04%200%200%201-.76.32h-6.76c-.294%200-.547-.107-.76-.32a1.036%201.036%200%200%201-.32-.76V8.48c0-.293.106-.547.32-.76.213-.213.466-.32.76-.32h6.76c.293%200%20.546.107.76.32.213.213.32.467.32.76Zm25.32%2020.48h-11.92v.2c0%201.627.52%202.44%201.56%202.44.293%200%20.653-.213%201.08-.64.427-.427.893-.64%201.4-.64h7.56c.587%200%20.88.293.88.88%200%201.307-.987%202.667-2.96%204.08-1.947%201.413-4.6%202.12-7.96%202.12-3.333%200-6.067-.867-8.2-2.6-2.107-1.76-3.16-4.173-3.16-7.24v-1.92c0-2.907%201.08-5.267%203.24-7.08%202.16-1.84%204.987-2.76%208.48-2.76%203.52%200%206.24%201.027%208.16%203.08%201.947%202.053%202.92%204.653%202.92%207.8v1.2c0%20.293-.107.547-.32.76-.213.213-.467.32-.76.32Zm-8.72-5.16c0-1.6-.533-2.4-1.6-2.4-1.067%200-1.6.8-1.6%202.4v.16h3.2v-.16ZM189.165%2037h-6.4c-.56%200-1-.333-1.32-1l-7.68-18.52a1.391%201.391%200%200%201-.04-.4c0-.187.093-.373.28-.56a.926.926%200%200%201%20.68-.28h6.76c.64%200%201.08.32%201.32.96l3.2%209.28%203.2-9.32c.24-.64.68-.96%201.32-.96h6.76c.267%200%20.493.093.68.28.187.187.28.373.28.56%200%20.187-.013.32-.04.4L190.485%2036c-.32.667-.76%201-1.32%201Zm30.064-14.84v1.68c0%20.613-.387%201.173-1.16%201.68l-16%2010.8a1%201%200%200%201-.52.12c-.187%200-.36-.08-.52-.24a.814.814%200%200%201-.24-.6v-6.48c0-.32.08-.6.24-.84.187-.267.333-.44.44-.52l.6-.36%207-4.4-7-4.36c-.853-.507-1.28-1.093-1.28-1.76V10.4c0-.24.08-.44.24-.6.16-.16.333-.24.52-.24a1%201%200%200%201%20.52.12l16%2010.8c.773.507%201.16%201.067%201.16%201.68Z'%20fill='%23FDA30D'/%3e%3c/g%3e%3cdefs%3e%3cclipPath%20id='a'%3e%3cpath%20fill='%23fff'%20d='M0%200h221v42H0z'/%3e%3c/clipPath%3e%3c/defs%3e%3c/svg%3e" alt="Арсен Вадиев — HTML верстальщик">
         </a>
         <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvas"
           aria-controls="offcanvas" aria-expanded="false" aria-label="Toggle navigation">
@@ -63,11 +76,11 @@
   <!-- Header -->
 
   <!-- Content -->
-  <main class="main" data-bs-spy="scroll" data-bs-target="#navbar" data-bs-smooth-scroll="true" tabindex="0">
+  <main id="main" class="main" data-bs-spy="scroll" data-bs-target="#navbar" data-bs-smooth-scroll="true" tabindex="-1">
     <section id="hero" class="section hero mb-4">
       <div class="container">
         <h1 class="title wow fadeInUp">Добрый день<br> я Арсен Вадиев</h1>
-        <h3 class="subtitle wow fadeInUp" data-wow-delay="0.3s">HTML верстальщик</h3>
+        <p class="subtitle wow fadeInUp" data-wow-delay="0.3s">HTML верстальщик</p>
       </div>
     </section>
 
@@ -295,31 +308,31 @@
         <div id="tools" class="swiper wow fadeInUp" data-wow-delay="0.2s">
           <div class="swiper-wrapper">
             <div class="swiper-slide">
-              <img src="./img/logos/html-css.png" alt="HTML/CSS">
+              <img src="./assets/html-css-CDyqGOWy.webp" alt="HTML/CSS" loading="lazy" decoding="async" width="300" height="180">
             </div>
             <div class="swiper-slide">
-              <img src="./img/logos/js.png" alt="Js">
+              <img src="data:image/webp;base64,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" alt="Js" loading="lazy" decoding="async" width="300" height="180">
             </div>
             <div class="swiper-slide">
-              <img src="./img/logos/jquery.png" alt="Jquery">
+              <img src="data:image/webp;base64,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" alt="Jquery" loading="lazy" decoding="async" width="300" height="180">
             </div>
             <div class="swiper-slide">
-              <img src="./img/logos/sass.png" alt="Sass">
+              <img src="./assets/sass-DT06wVnf.webp" alt="Sass" loading="lazy" decoding="async" width="300" height="180">
             </div>
             <div class="swiper-slide">
-              <img src="./img/logos/less.png" alt="Less">
+              <img src="./assets/less-B4vC2QCk.webp" alt="Less" loading="lazy" decoding="async" width="300" height="180">
             </div>
             <div class="swiper-slide">
-              <img src="./img/logos/photoshop.png" alt="Photoshop">
+              <img src="./assets/photoshop-DpxLGo1U.webp" alt="Photoshop" loading="lazy" decoding="async" width="300" height="180">
             </div>
             <div class="swiper-slide">
-              <img src="./img/logos/figma.png" alt="Figma">
+              <img src="./assets/figma-CbBkUNrg.webp" alt="Figma" loading="lazy" decoding="async" width="300" height="180">
             </div>
             <div class="swiper-slide">
-              <img src="./img/logos/vscode.png" alt="VS Code">
+              <img src="data:image/webp;base64,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" alt="VS Code" loading="lazy" decoding="async" width="300" height="180">
             </div>
             <div class="swiper-slide">
-              <img src="./img/logos/cursor.png" alt="Cursor">
+              <img src="./assets/cursor-D_WGRZWU.webp" alt="Cursor" loading="lazy" decoding="async" width="300" height="180">
             </div>
           </div>
         </div>
@@ -339,12 +352,12 @@
   <!-- /Content -->
 
   <!-- Modal -->
-  <div id="myModal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="modalLabel" aria-hidden="true">
+  <div id="myModal" class="modal fade" tabindex="-1" aria-labelledby="modalLabel" aria-hidden="true">
     <div class="modal-dialog modal-xl modal-dialog-centered">
       <div class="modal-content">
         <div class="modal-header">
           <div class="container d-flex justify-content-between align-items-center">
-            <h5 class="modal-title" id="modalLabel">Modal title</h5>
+            <h5 class="modal-title" id="modalLabel"></h5>
             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
           </div>
         </div>
@@ -366,7 +379,7 @@
               <div class="col-lg-3">
                 <h5 class="mt-3 mt-lg-0">Описание</h5>
                 <p id="project-description"></p>
-                <a id="project-link" class="text-break" href="" target="_blank"></a>
+                <a id="project-link" class="text-break" hidden target="_blank" rel="noopener noreferrer"></a>
               </div>
             </div>
           </div>
@@ -377,18 +390,7 @@
   <!-- /Modal -->
 
   <!-- JS -->
-  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js"
-    integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk"
-    crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.min.js"
-    integrity="sha384-kjU+l4N0Yf4ZOJErLsIcvOU2qSb74wXpOhqTvwVx3OElZRweTnQ6d31fXEoRD1Jy"
-    crossorigin="anonymous"></script>
-  <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
-  <script src="js/wow.min.js"></script>
-  <script src="https://cdn.lordicon.com/xdjxvujz.js"></script>
-  <script src="js/gsap.min.js"></script>
-  <script src="js/ScrollTrigger.min.js"></script>
-  <script src="js/scripts.js" type="module"></script>
+  <script src="https://cdn.lordicon.com/xdjxvujz.js" defer></script>
 </body>
 
 </html>
