@@ -1,0 +1,140 @@
+.direction-reveal__card {
+  display: inline-block;
+  position: relative;
+  overflow: hidden;
+}
+
+.direction-reveal__img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.direction-reveal__overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  padding: 16px;
+  color: #fff;
+  overflow: hidden;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+.direction-reveal__anim--enter,
+.direction-reveal__anim--leave {
+  animation-duration: 0.6s;
+  animation-timing-function: cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  animation-fill-mode: forwards;
+}
+
+.direction-reveal__anim--enter {
+  transform: translate3d(0, -100%, 0);
+}
+
+.direction-reveal__title {
+  margin-top: 0;
+}
+
+.slide--enter-top .direction-reveal__anim--enter {
+  animation-name: slide--enter-top;
+}
+
+.slide--enter-top .direction-reveal__anim--leave {
+  animation-name: slide--leave-bottom;
+}
+
+.slide--enter-bottom .direction-reveal__anim--enter {
+  animation-name: slide--enter-bottom;
+}
+
+.slide--enter-bottom .direction-reveal__anim--leave {
+  animation-name: slide--leave-top;
+}
+
+.slide--enter-left .direction-reveal__anim--enter {
+  animation-name: slide--enter-left;
+}
+
+.slide--enter-left .direction-reveal__anim--leave {
+  animation-name: slide--leave-right;
+}
+
+.slide--enter-right .direction-reveal__anim--enter {
+  animation-name: slide--enter-right;
+}
+
+.slide--enter-right .direction-reveal__anim--leave {
+  animation-name: slide--leave-left;
+}
+
+.slide--leave-top .direction-reveal__anim--enter {
+  animation-name: slide--leave-top;
+}
+
+.slide--leave-top .direction-reveal__anim--leave {
+  animation-name: slide--enter-bottom;
+}
+
+.slide--leave-bottom .direction-reveal__anim--enter {
+  animation-name: slide--leave-bottom;
+}
+
+.slide--leave-bottom .direction-reveal__anim--leave {
+  animation-name: slide--enter-top;
+}
+
+.slide--leave-left .direction-reveal__anim--enter {
+  animation-name: slide--leave-left;
+}
+
+.slide--leave-left .direction-reveal__anim--leave {
+  animation-name: slide--enter-right;
+}
+
+.slide--leave-right .direction-reveal__anim--enter {
+  animation-name: slide--leave-right;
+}
+
+.slide--leave-right .direction-reveal__anim--leave {
+  animation-name: slide--enter-left;
+}
+
+.direction-reveal [class*='slide--'] .direction-reveal__anim--enter,
+.direction-reveal [class*='slide--'] .direction-reveal__anim--leave {
+  transform: translate3d(0, 0, 0);
+  animation-timing-function: cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+@keyframes slide--enter-top {
+  0% { transform: translate3d(0, -100%, 0); }
+}
+
+@keyframes slide--leave-top {
+  100% { transform: translate3d(0, -100%, 0); }
+}
+
+@keyframes slide--enter-bottom {
+  0% { transform: translate3d(0, 100%, 0); }
+}
+
+@keyframes slide--leave-bottom {
+  100% { transform: translate3d(0, 100%, 0); }
+}
+
+@keyframes slide--enter-left {
+  0% { transform: translate3d(-100%, 0, 0); }
+}
+
+@keyframes slide--leave-left {
+  100% { transform: translate3d(-100%, 0, 0); }
+}
+
+@keyframes slide--enter-right {
+  0% { transform: translate3d(100%, 0, 0); }
+}
+
+@keyframes slide--leave-right {
+  100% { transform: translate3d(100%, 0, 0); }
+}

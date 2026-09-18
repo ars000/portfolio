@@ -1,6 +1,7 @@
 /** Список работ портфолио — правьте этот массив, чтобы добавить или убрать проекты */
 export const worksData = [
   {
+    id: 'vertera',
     title: 'vertera',
     href: 'https://vertera.org/',
     description:
@@ -19,6 +20,7 @@ export const worksData = [
     ],
   },
   {
+    id: 'vertera-global',
     title: 'vertera global',
     href: 'https://vertera.global/',
     description:
@@ -39,6 +41,7 @@ export const worksData = [
     ],
   },
   {
+    id: 'boss',
     title: 'Кабинета партнёра Boss',
     href: 'https://boss.vertera.org/',
     description:
@@ -62,6 +65,7 @@ export const worksData = [
     ],
   },
   {
+    id: 'academy',
     title: 'Международная Академия Гомеостаза',
     href: 'https://vertera.academy/',
     description:
@@ -79,6 +83,7 @@ export const worksData = [
     ],
   },
   {
+    id: 'boss-admin',
     title: 'Boss Admin',
     href: '',
     description:
@@ -92,6 +97,7 @@ export const worksData = [
     ],
   },
   {
+    id: 'pediatric-nutrition',
     title: 'Детская нутрициология',
     href: 'https://kids.vertera.academy/ru/',
     description:
@@ -110,6 +116,7 @@ export const worksData = [
     ],
   },  
   {
+    id: 'pharmpolymer',
     title: 'Pharmpolymer',
     href: 'https://pharmpolymer.com/',
     description:
@@ -126,11 +133,10 @@ export const worksData = [
       './img/works-img/pharmpolymer/screen-9.webp',
       './img/works-img/pharmpolymer/screen-10.webp',
       './img/works-img/pharmpolymer/screen-11.webp',
-      './img/works-img/pharmpolymer/screen-12.webp',
-      './img/works-img/pharmpolymer/screen-13.webp',
     ],
   },
   {
+    id: 'boss-test',
     title: 'Boss test',
     href: '',
     description:
@@ -146,136 +152,148 @@ export const worksData = [
     ],
   },
   {
+    id: 'dbe',
     title: 'DBE Systems',
     href: 'https://dbesystems.com/',
     description:
       'Веб сайт компании, которая занимается подключением оптоволоконной и беспроводной сетями.',
     images: [
-      './img/works-img/dbe/dbe.jpg',
-      './img/works-img/dbe/dbe-about.jpg',
-      './img/works-img/dbe/dbe-network.jpg',
-      './img/works-img/dbe/dbe-software.jpg',
+      './img/works-img/dbe/dbe.webp',
+      './img/works-img/dbe/dbe-about.webp',
+      './img/works-img/dbe/dbe-network.webp',
+      './img/works-img/dbe/dbe-software.webp',
     ],
   },
   {
+    id: 'bdswiss',
     title: 'BDSWISS Metals Trading',
     href: 'https://bdswiss.com/',
     description: 'Веб приложение для торговли драгоценными металлами.',
     images: [
-      './img/works-img/bdswiss/bdswiss.png',
-      './img/works-img/bdswiss/bdswiss-positions.png',
-      './img/works-img/bdswiss/bdswiss-tablet.png',
-      './img/works-img/bdswiss/bdswiss-mobile.png',
+      './img/works-img/bdswiss/bdswiss.webp',
+      './img/works-img/bdswiss/bdswiss-positions.webp',
+      './img/works-img/bdswiss/bdswiss-tablet.webp',
+      './img/works-img/bdswiss/bdswiss-mobile.webp',
     ],
   },
   {
+    id: 'raa',
     title: 'Right&Above Website',
     href: 'https://rightandabove.com/',
     description: 'Веб сайт компании.',
     images: [
-      './img/works-img/raa/raa.jpg',
-      './img/works-img/raa/raa-portfolio.jpg',
-      './img/works-img/raa/raa-services.jpg',
-      './img/works-img/raa/raa-inner.jpg',
+      './img/works-img/raa/raa.webp',
+      './img/works-img/raa/raa-portfolio.webp',
+      './img/works-img/raa/raa-services.webp',
+      './img/works-img/raa/raa-inner.webp',
     ],
   },
   {
+    id: 'klarpay-dashboard',
     title: 'Klarpay Dashboard',
     href: 'https://klarpay.com/',
     description: 'Веб приложение для предоставления финансовых услуг.',
     images: [
-      './img/works-img/klarpayDashboard/klarpay-dashboard.jpg',
-      './img/works-img/klarpayDashboard/klarpay-dashboard-actions.jpg',
-      './img/works-img/klarpayDashboard/klarpay-dashboard-login.jpg',
-      './img/works-img/klarpayDashboard/klarpay-dashboard-mobile.png',
+      './img/works-img/klarpayDashboard/klarpay-dashboard.webp',
+      './img/works-img/klarpayDashboard/klarpay-dashboard-actions.webp',
+      './img/works-img/klarpayDashboard/klarpay-dashboard-login.webp',
+      './img/works-img/klarpayDashboard/klarpay-dashboard-mobile.webp',
     ],
   },
   {
+    id: 'sparling',
     title: 'Sparling Financial',
     href: 'https://sparlingfinancial.com/',
     description: 'Веб сайт компании которая занимается торговлей криптовалютой.',
     images: [
-      './img/works-img/sparling/sparling.jpg',
-      './img/works-img/sparling/sparling-about.jpg',
-      './img/works-img/sparling/sparling-contacts.jpg',
-      './img/works-img/sparling/sparling-login.png',
+      './img/works-img/sparling/sparling.webp',
+      './img/works-img/sparling/sparling-about.webp',
+      './img/works-img/sparling/sparling-contacts.webp',
+      './img/works-img/sparling/sparling-login.webp',
     ],
   },
   {
+    id: 'klarpay-website',
     title: 'Klarpay Website',
     href: 'https://klarpay.com/',
     description: 'Веб сайт компании которая предоставляет финансовые услуги.',
     images: [
-      './img/works-img/klarpayWebsite/klarpayWebsite.jpg',
-      './img/works-img/klarpayWebsite/klarpayWebsite-applepay.jpg',
-      './img/works-img/klarpayWebsite/klarpayWebsite-news.jpg',
-      './img/works-img/klarpayWebsite/klarpayWebsite-mobile.jpg',
+      './img/works-img/klarpayWebsite/klarpayWebsite.webp',
+      './img/works-img/klarpayWebsite/klarpayWebsite-applepay.webp',
+      './img/works-img/klarpayWebsite/klarpayWebsite-news.webp',
+      './img/works-img/klarpayWebsite/klarpayWebsite-mobile.webp',
     ],
   },
   {
+    id: 'reel-genie',
     title: 'Reel Genie',
     href: '',
     description: 'Веб сайт стартапа.',
     images: [
-      './img/works-img/reelgenie/reelgenie-homepage.jpg',
-      './img/works-img/reelgenie/reelgenie-about.jpg',
-      './img/works-img/reelgenie/reelgenie-tech.jpg',
-      './img/works-img/reelgenie/reelgenie-api.jpg',
+      './img/works-img/reelgenie/reelgenie-homepage.webp',
+      './img/works-img/reelgenie/reelgenie-about.webp',
+      './img/works-img/reelgenie/reelgenie-tech.webp',
+      './img/works-img/reelgenie/reelgenie-api.webp',
     ],
   },
   {
+    id: 'docomo',
     title: 'Docomo Dess',
     href: '',
     description: 'Веб приложение для внутреннего пользования компании Docomo.',
     images: [
-      './img/works-img/docomo/docomo.png',
-      './img/works-img/docomo/docomo-profile.png',
-      './img/works-img/docomo/docomo-staff.png',
-      './img/works-img/docomo/docomo-login.png',
+      './img/works-img/docomo/docomo.webp',
+      './img/works-img/docomo/docomo-profile.webp',
+      './img/works-img/docomo/docomo-staff.webp',
+      './img/works-img/docomo/docomo-login.webp',
     ],
   },
   {
+    id: 'comodo',
     title: 'Comodo SecureBox',
     href: '',
     description: 'Веб приложение для внутреннего пользования компании Comodo.',
     images: [
-      './img/works-img/comodo/comodo.png',
-      './img/works-img/comodo/comodo-preferences.png',
-      './img/works-img/comodo/comodo-user.png',
-      './img/works-img/comodo/comodo-group.png',
+      './img/works-img/comodo/comodo.webp',
+      './img/works-img/comodo/comodo-preferences.webp',
+      './img/works-img/comodo/comodo-user.webp',
+      './img/works-img/comodo/comodo-group.webp',
     ],
   },
   {
+    id: 'advertising-analytics',
     title: 'Advertising Analytics',
     href: '',
     description: 'Веб сайт компании.',
     images: [
-      './img/works-img/advertisingAnalytics/advertisingAnalytics.jpg',
-      './img/works-img/advertisingAnalytics/advertisingAnalytics-products.jpg',
-      './img/works-img/advertisingAnalytics/advertisingAnalytics-admo.jpg',
-      './img/works-img/advertisingAnalytics/advertisingAnalytics-tablet.jpg',
+      './img/works-img/advertisingAnalytics/advertisingAnalytics.webp',
+      './img/works-img/advertisingAnalytics/advertisingAnalytics-products.webp',
+      './img/works-img/advertisingAnalytics/advertisingAnalytics-admo.webp',
+      './img/works-img/advertisingAnalytics/advertisingAnalytics-tablet.webp',
     ],
   },
   {
+    id: 'airbox',
     title: 'Airbox',
     href: '',
     description: 'Веб приложение для внутреннего пользования компании Airbox.',
     images: [
-      './img/works-img/airbox/airbox.png',
-      './img/works-img/airbox/airbox-logos.png',
-      './img/works-img/airbox/airbox-mapping.png',
-      './img/works-img/airbox/airbox-poster.png',
+      './img/works-img/airbox/airbox.webp',
+      './img/works-img/airbox/airbox-logos.webp',
+      './img/works-img/airbox/airbox-mapping.webp',
+      './img/works-img/airbox/airbox-poster.webp',
     ],
   },
   {
+    id: 'connected-investors',
     title: 'Connected Investors',
     href: 'https://connectedinvestors.com/',
     description: 'Веб сайт компании.',
     images: [
-      './img/works-img/connectedInvestors/connectedInvestors.jpg',
-      './img/works-img/connectedInvestors/connectedInvestors-insights.jpg',
-      './img/works-img/connectedInvestors/connectedInvestors-platform.jpg',
-      './img/works-img/connectedInvestors/connectedInvestors-mobile.jpg',
+      './img/works-img/connectedInvestors/connectedInvestors.webp',
+      './img/works-img/connectedInvestors/connectedInvestors-insights.webp',
+      './img/works-img/connectedInvestors/connectedInvestors-platform.webp',
+      './img/works-img/connectedInvestors/connectedInvestors-mobile.webp',
     ],
   },
   // {
@@ -283,22 +301,23 @@ export const worksData = [
   //   href: 'https://transientx.com/',
   //   description: 'Веб сайт компании TransientX.',
   //   images: [
-  //     './img/works-img/transientx/transientx.jpg',
-  //     './img/works-img/transientx/transientx-access.jpg',
-  //     './img/works-img/transientx/transientx-access-need.jpg',
-  //     './img/works-img/transientx/transientx-mobile.jpg',
+  //     './img/works-img/transientx/transientx.webp',
+  //     './img/works-img/transientx/transientx-access.webp',
+  //     './img/works-img/transientx/transientx-access-need.webp',
+  //     './img/works-img/transientx/transientx-mobile.webp',
   //   ],
   // },
   {
+    id: 'appflare',
     title: 'Appflare',
     href: '',
     description:
       'Продукт, который подключает локальные приложения на устройствах к своим серверам, используя изолированные оверлейные сети, созданные для отдельных пользователей.',
     images: [
-      './img/works-img/appflareDashboard/appflareDashboard.jpg',
-      './img/works-img/appflareDashboard/appflareDashboard-app.jpg',
-      './img/works-img/appflareDashboard/appflareDashboard-workspaces.jpg',
-      './img/works-img/appflareDashboard/appflareDashboard-login.jpg',
+      './img/works-img/appflareDashboard/appflareDashboard.webp',
+      './img/works-img/appflareDashboard/appflareDashboard-app.webp',
+      './img/works-img/appflareDashboard/appflareDashboard-workspaces.webp',
+      './img/works-img/appflareDashboard/appflareDashboard-login.webp',
     ],
   },
 ];

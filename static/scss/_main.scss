@@ -41,14 +41,27 @@ h3 {
 
 body {
   padding: 0;
-  transition: padding ease 0.1s;
 
   &.scrolled {
-    // padding-top: 64px;
-
     .header {
       background-color: rgba(0, 0, 0, .8);
     }
+  }
+}
+
+.skip-link {
+  position: absolute;
+  top: -100%;
+  left: 1rem;
+  z-index: 3000;
+  padding: 0.75rem 1rem;
+  background-color: var(--bs-primary);
+  color: #000;
+  font-weight: 700;
+  text-decoration: none;
+
+  &:focus {
+    top: 1rem;
   }
 }
 
@@ -173,7 +186,13 @@ body {
   display: flex;
   align-items: center;
   height: 100vh;
-  background: url("../img/bg.jpg") top center no-repeat;
+  background-image: url("../img/bg.jpg");
+  background-image: image-set(
+    url("../img/bg.webp") type("image/webp"),
+    url("../img/bg.jpg") type("image/jpeg")
+  );
+  background-position: top center;
+  background-repeat: no-repeat;
   background-size: cover;
   text-align: center;
   @extend .mask;
@@ -184,7 +203,14 @@ body {
   }
 
   .subtitle {
+    margin-bottom: 0;
+    font-size: 1.25rem;
+    font-weight: 700;
     letter-spacing: 3px;
+
+    @media (min-width: 768px) {
+      font-size: 2rem;
+    }
   }
 }
 
@@ -198,10 +224,19 @@ body {
 // Skills section
 .skills {
   position: relative;
-  background: url("../img/bg-skills.jpg") top center no-repeat;
+  background-image: url("../img/bg-skills.jpg");
+  background-image: image-set(
+    url("../img/bg-skills.webp") type("image/webp"),
+    url("../img/bg-skills.jpg") type("image/jpeg")
+  );
+  background-position: top center;
+  background-repeat: no-repeat;
   background-size: cover;
-  background-attachment: fixed;
   @extend .mask;
+
+  @media (min-width: 992px) {
+    background-attachment: fixed;
+  }
 
   .skills__item {
     display: flex;
@@ -282,6 +317,7 @@ body {
 
   img {
     max-width: 100%;
+    height: auto;
   }
 
   &-button-next,
@@ -354,18 +390,74 @@ body {
   width: 64px;
   height: 64px;
   border: 5px solid #fff;
-  border-bottom-color: var( --bs-primary);
+  border-bottom-color: var(--bs-primary);
   border-radius: 50%;
   display: inline-block;
   box-sizing: border-box;
   animation: rotation 1s linear infinite;
-  }
+}
 
-  @keyframes rotation {
+@keyframes rotation {
   0% {
-      transform: rotate(0deg);
+    transform: rotate(0deg);
   }
   100% {
-      transform: rotate(360deg);
+    transform: rotate(360deg);
   }
-  } 
+}
+
+.wow {
+  opacity: 0;
+}
+
+.wow.is-visible {
+  opacity: 1;
+}
+
+.wow.fadeInUp.is-visible {
+  animation: fadeInUp 0.8s ease both;
+}
+
+.wow.zoomIn.is-visible {
+  animation: zoomIn 0.6s ease both;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translate3d(0, 24px, 0);
+  }
+  to {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+@keyframes zoomIn {
+  from {
+    opacity: 0;
+    transform: scale(0.85);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .wow,
+  .wow.is-visible,
+  .wow.fadeInUp.is-visible,
+  .wow.zoomIn.is-visible,
+  .loader {
+    animation: none !important;
+    opacity: 1;
+    transform: none;
+  }
+
+  .direction-reveal__anim--enter,
+  .direction-reveal__anim--leave {
+    animation: none !important;
+    transform: none;
+  }
+}
