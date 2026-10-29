@@ -1,9 +1,10 @@
+# Прод только с master. Feature-ветки не деплоятся. Pages: Settings → GitHub Actions.
 name: Deploy to GitHub Pages
 
 on:
   push:
     branches: [master]
-  workflow_dispatch:
+  workflow_dispatch: # повтор без нового merge
 
 permissions:
   contents: read

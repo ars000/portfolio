@@ -17,8 +17,8 @@ npm run preview  # проверка dist/
 
 Правки — только в `static/` (`index.html`, `scss/`, `js/`, `img/`). Список работ в `static/js/works-data.js`. `dist/` и `node_modules/` в git не коммитятся.
 
-## Публикация
+## Git и публикация
 
-Push в ветку **`master`** запускает [GitHub Actions](.github/workflows/deploy-pages.yml): сборка и GitHub Pages.
-
-Старый способ `npm run deploy` (ветка `gh-pages`) можно не использовать, если Pages настроен на Actions.
+- Работа в **feature-ветках**; на [ars000.ru](https://ars000.ru) попадает только код из **`master`**.
+- **Push в `master`** → [GitHub Actions](.github/workflows/deploy-pages.yml) (Pages: **Source → GitHub Actions**).
+- WIP локально: `npm run dev` / `npm run preview`.
