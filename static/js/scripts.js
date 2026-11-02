@@ -4,8 +4,10 @@ import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import Swiper from 'swiper/bundle';
 import DirectionReveal from './direction-reveal.js';
 import { worksData } from './works-data.js';
+import { petProjectsData } from './pet-projects-data.js';
 
 import 'bootstrap/dist/css/bootstrap.min.css';
+import 'bootstrap-icons/font/bootstrap-icons.css';
 import 'swiper/css/bundle';
 import '../scss/styles.scss';
 
@@ -13,6 +15,17 @@ gsap.registerPlugin(ScrollTrigger);
 
 const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
 const worksById = new Map(worksData.map((work) => [work.id, work]));
+const WORKS_VISIBLE_ROWS = 3;
+
+function getWorksColumnsPerRow() {
+  if (window.matchMedia('(min-width: 992px)').matches) return 3;
+  if (window.matchMedia('(min-width: 576px)').matches) return 2;
+  return 1;
+}
+
+function getWorksVisibleLimit() {
+  return getWorksColumnsPerRow() * WORKS_VISIBLE_ROWS;
+}
 
 function onReady(callback) {
   if (document.readyState === 'loading') {
@@ -124,6 +137,86 @@ function renderWorks() {
         </div>`;
     })
     .join('');
+}
+
+function renderPetProjects() {
+  const wrap = document.querySelector('#pet-projects-wrap');
+  if (!wrap) return;
+
+  wrap.innerHTML = petProjectsData
+    .map(({ title, description, image, href, repo, technologies }, index) => {
+      const techItems = (technologies || [])
+        .map((name) => `<li class="pet-project__tech-item">${escapeHtml(name)}</li>`)
+        .join('');
+      const wowDelay = `${0.2 + index * 0.2}s`;
+
+      return `
+        <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="${wowDelay}">
+          <article class="pet-project">
+            <a class="pet-project__thumb" href="${escapeAttr(href)}" target="_blank" rel="noopener noreferrer">
+              <img class="pet-project__img" src="${escapeAttr(image)}" alt="${escapeAttr(title)}" loading="lazy" decoding="async" width="800" height="450">
+            </a>
+            <div class="pet-project__body">
+              <h3 class="pet-project__title">${escapeHtml(title)}</h3>
+              <p class="pet-project__desc">${escapeHtml(description)}</p>
+              <ul class="pet-project__tech">${techItems}</ul>
+              <div class="pet-project__links">
+                <a class="works-link pet-project__link" href="${escapeAttr(href)}" target="_blank" rel="noopener noreferrer">Открыть проект</a>
+                <a class="works-link pet-project__link" href="${escapeAttr(repo)}" target="_blank" rel="noopener noreferrer">Код</a>
+              </div>
+            </div>
+          </article>
+        </div>`;
+    })
+    .join('');
+}
+
+function revealWorksWowItems(container) {
+  container.querySelectorAll('.wow:not(.is-visible)').forEach((el) => {
+    el.classList.add('is-visible');
+  });
+}
+
+function updateWorksVisibility() {
+  const worksWrap = document.querySelector('#works-wrap');
+  const showMoreBtn = document.querySelector('#works-show-more');
+  if (!worksWrap || !showMoreBtn) return;
+
+  const items = worksWrap.querySelectorAll(':scope > .col-sm-6');
+  const expanded = worksWrap.classList.contains('works-wrap--expanded');
+  const limit = getWorksVisibleLimit();
+  const hasMore = worksData.length > limit;
+
+  items.forEach((item, index) => {
+    item.classList.toggle('works-wrap__item--hidden', !expanded && index >= limit);
+  });
+
+  showMoreBtn.hidden = expanded || !hasMore;
+  showMoreBtn.setAttribute('aria-expanded', expanded ? 'true' : 'false');
+}
+
+function initWorksShowMore() {
+  const worksWrap = document.querySelector('#works-wrap');
+  const showMoreBtn = document.querySelector('#works-show-more');
+  if (!worksWrap || !showMoreBtn) return;
+
+  showMoreBtn.addEventListener('click', () => {
+    worksWrap.classList.add('works-wrap--expanded');
+    updateWorksVisibility();
+    revealWorksWowItems(worksWrap);
+  });
+
+  let resizeTimer;
+  window.addEventListener('resize', () => {
+    clearTimeout(resizeTimer);
+    resizeTimer = setTimeout(() => {
+      if (!worksWrap.classList.contains('works-wrap--expanded')) {
+        updateWorksVisibility();
+      }
+    }, 150);
+  });
+
+  updateWorksVisibility();
 }
 
 /**
@@ -363,6 +456,8 @@ async function initCodingAnimation() {
 
 initLoader();
 renderWorks();
+renderPetProjects();
+initWorksShowMore();
 initReveal();
 initHeaderScroll();
 initWorksModal();

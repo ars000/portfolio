@@ -66,6 +66,7 @@
             <li class="nav-item"><a href="#skills" class="nav-link">Навыки</a></li>
             <li class="nav-item"><a href="#process" class="nav-link">Процесс верстки</a></li>
             <li class="nav-item"><a href="#works" class="nav-link">Работы</a></li>
+            <li class="nav-item"><a href="#pet-projects" class="nav-link">Пет-проекты</a></li>
           </ul>
         </div>
       </div>
@@ -77,8 +78,16 @@
   <main id="main" class="main" data-bs-spy="scroll" data-bs-target="#navbar" data-bs-smooth-scroll="true" tabindex="-1">
     <section id="hero" class="section hero mb-4">
       <div class="container">
-        <h1 class="title wow fadeInUp">Добрый день<br> я Арсен Вадиев</h1>
-        <p class="subtitle wow fadeInUp" data-wow-delay="0.3s">HTML верстальщик</p>
+        <h1 class="title wow fadeInUp">Арсен Вадиев<br> <span>HTML-верстальщик</span></h1>
+        <p class="subtitle wow fadeInUp" data-wow-delay="0.3s">Адаптивная вёрстка сайтов<br> и интерфейсов на React и Angular.</p>
+
+        <div class="buttons-wrap">
+          <a href="#works" class="btn btn-outline-primary btn-lg wow fadeInUp" data-wow-delay="0.6s">Посмотреть работы</a>
+          <a href="https://t.me/avadiev" class="btn btn-primary btn-lg wow fadeInUp gap-2" data-wow-delay="0.6s" target="_blank" rel="noopener noreferrer">
+            <i class="bi bi-telegram" aria-hidden="true"></i>
+            Связаться со мной
+          </a>
+        </div>
       </div>
     </section>
 
@@ -88,29 +97,19 @@
           <div class="col-lg-6">
             <h2 class="wow fadeInUp">Обо мне</h2>
             <p class="wow fadeInUp" data-wow-delay="0.3s">
-              Приветствую Вас на своем сайте-портфолио! Меня зовут Арсен. Занимаюсь HTML-версткой сайтов и
-              веб-приложений.
+              Занимаюсь HTML-вёрсткой сайтов и интерфейсов веб-приложений: от лендингов и многостраничных сайтов до вёрстки интерфейсов крупных SPA-приложений на React и Angular.
             </p>
-
             <p class="wow fadeInUp" data-wow-delay="0.4s">
-              Имею большой опыт работы над проектами различной сложности: от простых лендингов и многостраничных сайтов
-              до крупных SPA-приложений на React и Angular. В работе использую компонентный подход, уделяю внимание
-              структуре кода, его повторному использованию и удобству дальнейшей поддержки проекта.
+              Использую компонентный подход и методологию БЭМ. Уделяю внимание структуре кода, повторному использованию компонентов и удобству дальнейшей поддержки проекта.
             </p>
             <p class="wow fadeInUp" data-wow-delay="0.5s">
-              Вёрстка выполняется в соответствии с современными стандартами: полностью валидная, кроссбраузерная и
-              адаптивная. В зависимости от задач проекта использую Sass/Less, Bootstrap, Material UI, Angular Material и
-              другие современные инструменты frontend-разработки.
+              Подбираю инструменты под задачи проекта: Sass/Less, Bootstrap, Material UI, Tailwind CSS и Angular Material. При необходимости подключаю и настраиваю JavaScript- и jQuery-библиотеки, плагины и готовые UI-компоненты. Добавляю CSS- и SVG-анимации, для более сложных анимаций использую GSAP.
             </p>
             <p class="wow fadeInUp" data-wow-delay="0.6s">
-              Для автоматизации процесса разработки применяю Gulp и Webpack. При вёрстке по макету использую Pixel
-              Perfect, чтобы добиться максимально точного соответствия дизайну. При необходимости подключаю и настраиваю
-              JavaScript- и jQuery-библиотеки, плагины и готовые UI-компоненты.
+              Применяю ИИ-инструменты, в том числе Cursor, сохраняя контроль над качеством результата. Развиваю собственные <a href="#pet-projects" class="works-link">пет-проекты</a>, в которых пробую новые инструменты и подходы.
             </p>
             <p class="wow fadeInUp" data-wow-delay="0.7s">
-              Готовый код проверяю с помощью валидатора W3C, тестирую отображение интерфейса в популярных браузерах и на
-              различных устройствах. Особое внимание уделяю адаптивности, производительности и корректной работе
-              приложения на разных разрешениях экрана
+              Проверяю соответствие вёрстки макету с помощью Pixel Perfect, корректность HTML — валидатором W3C. Тестирую адаптивность и отображение интерфейсов в популярных браузерах на разных устройствах, уделяю внимание производительности.
             </p>
           </div>
           <div class="col-lg-6">
@@ -132,12 +131,12 @@
                     colors="primary:#1f1dc3,secondary:#fda30d">
                   </lord-icon>
                 </div>
-                <h4 class="card-title">HTML5/CSS3</h4>
+                <h4 class="card-title">HTML5 / CSS3</h4>
                 <ul>
-                  <li>Семантичная верстка</li>
-                  <li>Валидный, кроссбраузерный код</li>
-                  <li>Адаптивная вёрстка</li>
-                  <li>PixelPerfect</li>
+                  <li>Семантичная, валидная вёрстка</li>
+                  <li>Flexbox / Grid</li>
+                  <li>Адаптив и PixelPerfect</li>
+                  <li>CSS-анимации, SVG и GSAP</li>
                 </ul>
               </div>
             </div>
@@ -147,16 +146,16 @@
             <div class="card">
               <div class="card-body">
                 <div class="card-icon">
-                  <lord-icon class="icon" src="https://cdn.lordicon.com/pndvzexs.json" trigger="loop" delay="5000"
+                  <lord-icon class="icon" src="https://cdn.lordicon.com/jvucoldz.json" trigger="loop" delay="5000"
                     colors="primary:#1f1dc3,secondary:#fda30d">
                   </lord-icon>
                 </div>
-                <h4 class="card-title">Sass/Less</h4>
+                <h4 class="card-title">Sass / Less + BEM</h4>
                 <ul>
-                  <li>Ускоренная стилизация сайта</li>
-                  <li>Структурированный код</li>
-                  <li>Упрощенный синтаксис</li>
-                  <li>Гибкий и переиспользуемый код</li>
+                  <li>Блоки, элементы, модификаторы</li>
+                  <li>Понятная структура стилей</li>
+                  <li>Масштабируемость без конфликтов</li>
+                  <li>Удобство поддержки чужого кода</li>
                 </ul>
               </div>
             </div>
@@ -170,12 +169,12 @@
                     colors="primary:#1f1dc3,secondary:#fda30d">
                   </lord-icon>
                 </div>
-                <h4 class="card-title">Javascript/JQuery</h4>
+                <h4 class="card-title">React / Angular</h4>
                 <ul>
-                  <li>Подключение библиотек</li>
-                  <li>Настройка плагинов</li>
-                  <li>Готовые UI-компоненты</li>
-                  <li>Интерактивность интерфейса</li>
+                  <li>Компонентная вёрстка</li>
+                  <li>Переиспользуемые UI-блоки</li>
+                  <li>Работа с готовыми библиотеками компонентов</li>
+                  <li>Адаптация макета под фреймворк</li>
                 </ul>
               </div>
             </div>
@@ -189,12 +188,12 @@
                     colors="primary:#1f1dc3,secondary:#fda30d">
                   </lord-icon>
                 </div>
-                <h4 class="card-title">Photoshop/Figma</h4>
+                <h4 class="card-title">Photoshop / Figma</h4>
                 <ul>
                   <li>Нарезка изображений из макета</li>
                   <li>Экспорт SVG иконок и изображений</li>
                   <li>Экспорт стилей для ускоренной верстки</li>
-                  <li>Оптимизация изображений для веба</li>
+                  <li>Оптимизация картинок (WebP)</li>
                 </ul>
               </div>
             </div>
@@ -204,16 +203,16 @@
             <div class="card">
               <div class="card-body">
                 <div class="card-icon">
-                  <lord-icon class="icon" src="https://cdn.lordicon.com/ochimkct.json" trigger="loop" delay="5000"
+                  <lord-icon class="icon" src="https://cdn.lordicon.com/pndvzexs.json" trigger="loop" delay="5000"
                     colors="primary:#1f1dc3,secondary:#fda30d">
                   </lord-icon>
                 </div>
-                <h4 class="card-title">Bootstrap/Material UI</h4>
+                <h4 class="card-title">Bootstrap / Material UI / Tailwind CSS</h4>
                 <ul>
-                  <li>Высокая скорость разработки</li>
-                  <li>Кроссбраузерность и адаптивность</li>
-                  <li>Готовые элементы компонентов</li>
+                  <li>Готовые UI-компоненты</li>
                   <li>Кастомизация под дизайн</li>
+                  <li>Высокая скорость разработки</li>
+                  <li>Адаптив и сетка из коробки</li>
                 </ul>
               </div>
             </div>
@@ -223,16 +222,16 @@
             <div class="card">
               <div class="card-body">
                 <div class="card-icon">
-                  <lord-icon class="icon" src="https://cdn.lordicon.com/jqeuwnmb.json" trigger="loop" delay="5000"
+                  <lord-icon class="icon" src="https://cdn.lordicon.com/ochimkct.json" trigger="loop" delay="5000"
                     colors="primary:#1f1dc3,secondary:#fda30d">
                   </lord-icon>
                 </div>
-                <h4 class="card-title">Gulp/Webpack</h4>
+                <h4 class="card-title">Git / GitHub</h4>
                 <ul>
-                  <li>Автоматизация сборки</li>
-                  <li>Компиляция препроцессоров</li>
-                  <li>Минификация кода</li>
-                  <li>Объединение файлов в бандл</li>
+                  <li>Ведение истории проекта</li>
+                  <li>Совместная работа с командой</li>
+                  <li>Ветки и pull request</li>
+                  <li>Публикация на GitHub Pages</li>
                 </ul>
               </div>
             </div>
@@ -306,7 +305,8 @@
         <div id="tools" class="swiper wow fadeInUp" data-wow-delay="0.2s">
           <div class="swiper-wrapper">
             <div class="swiper-slide">
-              <img src="./img/logos/html-css.webp" alt="HTML/CSS" loading="lazy" decoding="async" width="300" height="180">
+              <img src="./img/logos/html-css.webp" alt="HTML/CSS" loading="lazy" decoding="async" width="300"
+                height="180">
             </div>
             <div class="swiper-slide">
               <img src="./img/logos/js.webp" alt="Js" loading="lazy" decoding="async" width="300" height="180">
@@ -321,7 +321,8 @@
               <img src="./img/logos/less.webp" alt="Less" loading="lazy" decoding="async" width="300" height="180">
             </div>
             <div class="swiper-slide">
-              <img src="./img/logos/photoshop.webp" alt="Photoshop" loading="lazy" decoding="async" width="300" height="180">
+              <img src="./img/logos/photoshop.webp" alt="Photoshop" loading="lazy" decoding="async" width="300"
+                height="180">
             </div>
             <div class="swiper-slide">
               <img src="./img/logos/figma.webp" alt="Figma" loading="lazy" decoding="async" width="300" height="180">
@@ -343,6 +344,20 @@
         <h2 class="wow fadeInUp">Мои работы</h2>
         <div id="works-wrap" class="row works-wrap direction-reveal direction-reveal--demo-slide">
           <!-- карточки рендерятся из js/works-data.js -->
+        </div>
+        <div class="works-actions text-center">
+          <button type="button" id="works-show-more" class="btn btn-outline-primary btn-lg mx-auto wow fadeInUp" data-wow-delay="0.2s" hidden aria-expanded="false">
+            Показать еще
+          </button>
+        </div>
+      </div>
+    </section>
+    
+    <section id="pet-projects" class="section pet-projects">
+      <div class="container">
+        <h2 class="wow fadeInUp">Мои пет-проекты</h2>
+        <div id="pet-projects-wrap" class="row pet-projects-wrap">
+          <!-- карточки рендерятся из js/pet-projects-data.js -->
         </div>
       </div>
     </section>
@@ -377,7 +392,7 @@
               <div class="col-lg-3">
                 <h5 class="mt-3 mt-lg-0">Описание</h5>
                 <p id="project-description"></p>
-                <a id="project-link" class="text-break" hidden target="_blank" rel="noopener noreferrer"></a>
+                <a id="project-link" class="text-break works-link" hidden target="_blank" rel="noopener noreferrer"></a>
               </div>
             </div>
           </div>
@@ -388,7 +403,7 @@
   <!-- /Modal -->
 
   <!-- JS -->
-  <script src="https://cdn.lordicon.com/xdjxvujz.js" defer></script>
+  <script src="https://cdn.lordicon.com/lordicon.js" defer></script>
   <script src="./js/scripts.js" type="module"></script>
 </body>
 
