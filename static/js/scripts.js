@@ -90,6 +90,15 @@ function escapeAttr(value) {
   return escapeHtml(value).replace(/\n/g, ' ');
 }
 
+function descriptionToHtml(text) {
+  if (!text) return '';
+  return text
+    .split(/\n\n+/)
+    .filter(Boolean)
+    .map((part) => `<p>${escapeHtml(part.trim())}</p>`)
+    .join('');
+}
+
 /**
  * Показывает элементы с классом .wow при появлении во вьюпорте.
  */
@@ -161,8 +170,8 @@ function renderPetProjects() {
               <p class="pet-project__desc">${escapeHtml(description)}</p>
               <ul class="pet-project__tech">${techItems}</ul>
               <div class="pet-project__links">
-                <a class="works-link pet-project__link" href="${escapeAttr(href)}" target="_blank" rel="noopener noreferrer">Открыть проект</a>
-                <a class="works-link pet-project__link" href="${escapeAttr(repo)}" target="_blank" rel="noopener noreferrer">Код</a>
+                <a class="link pet-project__link" href="${escapeAttr(href)}" target="_blank" rel="noopener noreferrer">Открыть проект</a>
+                <a class="link pet-project__link" href="${escapeAttr(repo)}" target="_blank" rel="noopener noreferrer">Код</a>
               </div>
             </div>
           </article>
@@ -265,7 +274,7 @@ function initWorksModal() {
     swiper.slideTo(0, 0);
     swiper.update();
 
-    if (projectDesc) projectDesc.textContent = work.description || '';
+    if (projectDesc) projectDesc.innerHTML = descriptionToHtml(work.description || '');
     if (modalTitle) modalTitle.textContent = work.title;
 
     if (projectLink) {

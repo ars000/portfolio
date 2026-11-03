@@ -95,6 +95,15 @@ h3 {
   min-height: 52px;
 }
 
+.link {
+  text-decoration: none;
+  color: var(--bs-primary);
+
+  &:hover {
+    color: var(--bs-link-hover-color);
+  }
+}
+
 
 body {
   padding: 0;
@@ -429,12 +438,9 @@ body {
 }
 
 .works-link {
-  text-decoration: none;
-  color: var(--bs-primary);
-
-  &:hover {
-    color: var(--bs-link-hover-color);
-  }
+  display: block;
+  margin-top: 12px;
+  @extend .link;
 }
 
 .work {
@@ -566,6 +572,17 @@ body {
 
   .btn-close {
     box-shadow: none;
+  }
+
+  .project-description {
+    p {
+      margin-bottom: 0.75rem;
+      font-size: 0.9375rem;
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
   }
 }
 
