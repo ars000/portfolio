@@ -30,4 +30,13 @@ export const petProjectsData = [
     repo: 'https://github.com/ars000/Recipe-AI',
     technologies: ['Angular', 'NestJS', 'Prisma', 'TypeScript'],
   },
+  {
+    id: 'patents',
+    title: 'Напоминания по патентам',
+    description:
+      'Следит за патентами на работу иностранных сотрудников: своевременная оплата и обязательные уведомления. Google Таблица, ежедневные проверки, напоминания в Telegram, команды бота и автозаполнение сроков — на Google Apps Script, без отдельного сервера.',
+    image: './img/pet-projects/patents.webp',
+    repo: 'https://github.com/ars000/patents_bot',
+    technologies: ['Google Apps Script', 'Telegram Bot API', 'JavaScript', 'Node.js'],
+  },
 ];
