@@ -158,19 +158,24 @@ function renderPetProjects() {
         .map((name) => `<li class="pet-project__tech-item">${escapeHtml(name)}</li>`)
         .join('');
       const wowDelay = `${0.2 + index * 0.2}s`;
+      const img = `<img class="pet-project__img" src="${escapeAttr(image)}" alt="${escapeAttr(title)}" loading="lazy" decoding="async" width="800" height="450">`;
+      const thumb = href
+        ? `<a class="pet-project__thumb" href="${escapeAttr(href)}" target="_blank" rel="noopener noreferrer">${img}</a>`
+        : `<div class="pet-project__thumb">${img}</div>`;
+      const projectLink = href
+        ? `<a class="link pet-project__link" href="${escapeAttr(href)}" target="_blank" rel="noopener noreferrer">Открыть проект</a>`
+        : '';
 
       return `
         <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="${wowDelay}">
           <article class="pet-project">
-            <a class="pet-project__thumb" href="${escapeAttr(href)}" target="_blank" rel="noopener noreferrer">
-              <img class="pet-project__img" src="${escapeAttr(image)}" alt="${escapeAttr(title)}" loading="lazy" decoding="async" width="800" height="450">
-            </a>
+            ${thumb}
             <div class="pet-project__body">
               <h3 class="pet-project__title">${escapeHtml(title)}</h3>
               <p class="pet-project__desc">${escapeHtml(description)}</p>
               <ul class="pet-project__tech">${techItems}</ul>
               <div class="pet-project__links">
-                <a class="link pet-project__link" href="${escapeAttr(href)}" target="_blank" rel="noopener noreferrer">Открыть проект</a>
+                ${projectLink}
                 <a class="link pet-project__link" href="${escapeAttr(repo)}" target="_blank" rel="noopener noreferrer">Код</a>
               </div>
             </div>
